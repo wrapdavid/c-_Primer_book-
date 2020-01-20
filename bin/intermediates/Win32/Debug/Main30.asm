@@ -65,6 +65,10 @@ PUBLIC	?eof@?$_Narrow_char_traits@DH@std@@SAHXZ	; std::_Narrow_char_traits<char,
 PUBLIC	_main
 PUBLIC	??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z ; std::operator<<<std::char_traits<char> >
 PUBLIC	??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+PUBLIC	??$begin@$$BY02H$03@std@@YAPAY02HAAY132H@Z	; std::begin<int [3],4>
+PUBLIC	??$end@$$BY02H$03@std@@YAPAY02HAAY132H@Z	; std::end<int [3],4>
+PUBLIC	??$begin@H$02@std@@YAPAHAAY02H@Z		; std::begin<int,3>
+PUBLIC	??$end@H$02@std@@YAPAHAAY02H@Z			; std::end<int,3>
 PUBLIC	??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z ; std::basic_ostream<char,std::char_traits<char> >::_Sentry_base::_Sentry_base
 PUBLIC	??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ ; std::basic_ostream<char,std::char_traits<char> >::_Sentry_base::~_Sentry_base
 PUBLIC	??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z ; std::basic_ostream<char,std::char_traits<char> >::sentry::sentry
@@ -73,6 +77,7 @@ PUBLIC	??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QBE_NXZ ; std::bas
 PUBLIC	__JustMyCode_Default
 PUBLIC	??_C@_01CLKCMJKC@?5@				; `string'
 PUBLIC	??_C@_0CC@FEPGPHHN@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@ ; `string'
+PUBLIC	??_C@_0CH@MANIALAA@?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@ ; `string'
 EXTRN	?uncaught_exception@std@@YA_NXZ:PROC		; std::uncaught_exception
 EXTRN	_strlen:PROC
 EXTRN	__imp_?good@ios_base@std@@QBE_NXZ:PROC
@@ -111,6 +116,11 @@ rtc$TMZ	ENDS
 rtc$IMZ	SEGMENT
 __RTC_InitBase.rtc$IMZ DD FLAT:__RTC_InitBase
 rtc$IMZ	ENDS
+;	COMDAT ??_C@_0CH@MANIALAA@?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@
+CONST	SEGMENT
+??_C@_0CH@MANIALAA@?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@ DB '='
+	DB	'=====================================', 00H	; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0CC@FEPGPHHN@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@
 CONST	SEGMENT
 ??_C@_0CC@FEPGPHHN@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@ DB '-'
@@ -145,6 +155,46 @@ xdata$x	ENDS
 ;	COMDAT xdata$x
 xdata$x	SEGMENT
 __ehfuncinfo$??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ DD 019930522H
+	DD	00H
+	DD	00H
+	DD	2 DUP(00H)
+	DD	2 DUP(00H)
+	DD	00H
+	DD	05H
+xdata$x	ENDS
+;	COMDAT xdata$x
+xdata$x	SEGMENT
+__ehfuncinfo$??$end@H$02@std@@YAPAHAAY02H@Z DD 019930522H
+	DD	00H
+	DD	00H
+	DD	2 DUP(00H)
+	DD	2 DUP(00H)
+	DD	00H
+	DD	05H
+xdata$x	ENDS
+;	COMDAT xdata$x
+xdata$x	SEGMENT
+__ehfuncinfo$??$begin@H$02@std@@YAPAHAAY02H@Z DD 019930522H
+	DD	00H
+	DD	00H
+	DD	2 DUP(00H)
+	DD	2 DUP(00H)
+	DD	00H
+	DD	05H
+xdata$x	ENDS
+;	COMDAT xdata$x
+xdata$x	SEGMENT
+__ehfuncinfo$??$end@$$BY02H$03@std@@YAPAY02HAAY132H@Z DD 019930522H
+	DD	00H
+	DD	00H
+	DD	2 DUP(00H)
+	DD	2 DUP(00H)
+	DD	00H
+	DD	05H
+xdata$x	ENDS
+;	COMDAT xdata$x
+xdata$x	SEGMENT
+__ehfuncinfo$??$begin@$$BY02H$03@std@@YAPAY02HAAY132H@Z DD 019930522H
 	DD	00H
 	DD	00H
 	DD	2 DUP(00H)
@@ -619,6 +669,236 @@ $LN1@Sentry_bas:
 	ret	4
 ??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z ENDP ; std::basic_ostream<char,std::char_traits<char> >::_Sentry_base::_Sentry_base
 _TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??$end@H$02@std@@YAPAHAAY02H@Z
+_TEXT	SEGMENT
+__$EHRec$ = -12						; size = 12
+__Array$ = 8						; size = 4
+??$end@H$02@std@@YAPAHAAY02H@Z PROC			; std::end<int,3>, COMDAT
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility
+; Line 1066
+	push	ebp
+	mov	ebp, esp
+	push	-1
+	push	__ehhandler$??$end@H$02@std@@YAPAHAAY02H@Z
+	mov	eax, DWORD PTR fs:0
+	push	eax
+	sub	esp, 192				; 000000c0H
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-204]
+	mov	ecx, 48					; 00000030H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	eax, DWORD PTR ___security_cookie
+	xor	eax, ebp
+	push	eax
+	lea	eax, DWORD PTR __$EHRec$[ebp]
+	mov	DWORD PTR fs:0, eax
+	mov	ecx, OFFSET __86E03ACD_xutility
+	call	@__CheckForDebuggerJustMyCode@4
+; Line 1067
+	mov	eax, DWORD PTR __Array$[ebp]
+	add	eax, 12					; 0000000cH
+; Line 1068
+	mov	ecx, DWORD PTR __$EHRec$[ebp]
+	mov	DWORD PTR fs:0, ecx
+	pop	ecx
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 204				; 000000ccH
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+_TEXT	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+__ehhandler$??$end@H$02@std@@YAPAHAAY02H@Z:
+	mov	edx, DWORD PTR [esp+8]
+	lea	eax, DWORD PTR [edx+12]
+	mov	ecx, DWORD PTR [edx-208]
+	xor	ecx, eax
+	call	@__security_check_cookie@4
+	mov	eax, OFFSET __ehfuncinfo$??$end@H$02@std@@YAPAHAAY02H@Z
+	jmp	___CxxFrameHandler3
+text$x	ENDS
+??$end@H$02@std@@YAPAHAAY02H@Z ENDP			; std::end<int,3>
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??$begin@H$02@std@@YAPAHAAY02H@Z
+_TEXT	SEGMENT
+__$EHRec$ = -12						; size = 12
+__Array$ = 8						; size = 4
+??$begin@H$02@std@@YAPAHAAY02H@Z PROC			; std::begin<int,3>, COMDAT
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility
+; Line 1061
+	push	ebp
+	mov	ebp, esp
+	push	-1
+	push	__ehhandler$??$begin@H$02@std@@YAPAHAAY02H@Z
+	mov	eax, DWORD PTR fs:0
+	push	eax
+	sub	esp, 192				; 000000c0H
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-204]
+	mov	ecx, 48					; 00000030H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	eax, DWORD PTR ___security_cookie
+	xor	eax, ebp
+	push	eax
+	lea	eax, DWORD PTR __$EHRec$[ebp]
+	mov	DWORD PTR fs:0, eax
+	mov	ecx, OFFSET __86E03ACD_xutility
+	call	@__CheckForDebuggerJustMyCode@4
+; Line 1062
+	mov	eax, DWORD PTR __Array$[ebp]
+; Line 1063
+	mov	ecx, DWORD PTR __$EHRec$[ebp]
+	mov	DWORD PTR fs:0, ecx
+	pop	ecx
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 204				; 000000ccH
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+_TEXT	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+__ehhandler$??$begin@H$02@std@@YAPAHAAY02H@Z:
+	mov	edx, DWORD PTR [esp+8]
+	lea	eax, DWORD PTR [edx+12]
+	mov	ecx, DWORD PTR [edx-208]
+	xor	ecx, eax
+	call	@__security_check_cookie@4
+	mov	eax, OFFSET __ehfuncinfo$??$begin@H$02@std@@YAPAHAAY02H@Z
+	jmp	___CxxFrameHandler3
+text$x	ENDS
+??$begin@H$02@std@@YAPAHAAY02H@Z ENDP			; std::begin<int,3>
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??$end@$$BY02H$03@std@@YAPAY02HAAY132H@Z
+_TEXT	SEGMENT
+__$EHRec$ = -12						; size = 12
+__Array$ = 8						; size = 4
+??$end@$$BY02H$03@std@@YAPAY02HAAY132H@Z PROC		; std::end<int [3],4>, COMDAT
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility
+; Line 1066
+	push	ebp
+	mov	ebp, esp
+	push	-1
+	push	__ehhandler$??$end@$$BY02H$03@std@@YAPAY02HAAY132H@Z
+	mov	eax, DWORD PTR fs:0
+	push	eax
+	sub	esp, 192				; 000000c0H
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-204]
+	mov	ecx, 48					; 00000030H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	eax, DWORD PTR ___security_cookie
+	xor	eax, ebp
+	push	eax
+	lea	eax, DWORD PTR __$EHRec$[ebp]
+	mov	DWORD PTR fs:0, eax
+	mov	ecx, OFFSET __86E03ACD_xutility
+	call	@__CheckForDebuggerJustMyCode@4
+; Line 1067
+	mov	eax, DWORD PTR __Array$[ebp]
+	add	eax, 48					; 00000030H
+; Line 1068
+	mov	ecx, DWORD PTR __$EHRec$[ebp]
+	mov	DWORD PTR fs:0, ecx
+	pop	ecx
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 204				; 000000ccH
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+_TEXT	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+__ehhandler$??$end@$$BY02H$03@std@@YAPAY02HAAY132H@Z:
+	mov	edx, DWORD PTR [esp+8]
+	lea	eax, DWORD PTR [edx+12]
+	mov	ecx, DWORD PTR [edx-208]
+	xor	ecx, eax
+	call	@__security_check_cookie@4
+	mov	eax, OFFSET __ehfuncinfo$??$end@$$BY02H$03@std@@YAPAY02HAAY132H@Z
+	jmp	___CxxFrameHandler3
+text$x	ENDS
+??$end@$$BY02H$03@std@@YAPAY02HAAY132H@Z ENDP		; std::end<int [3],4>
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??$begin@$$BY02H$03@std@@YAPAY02HAAY132H@Z
+_TEXT	SEGMENT
+__$EHRec$ = -12						; size = 12
+__Array$ = 8						; size = 4
+??$begin@$$BY02H$03@std@@YAPAY02HAAY132H@Z PROC		; std::begin<int [3],4>, COMDAT
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility
+; Line 1061
+	push	ebp
+	mov	ebp, esp
+	push	-1
+	push	__ehhandler$??$begin@$$BY02H$03@std@@YAPAY02HAAY132H@Z
+	mov	eax, DWORD PTR fs:0
+	push	eax
+	sub	esp, 192				; 000000c0H
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-204]
+	mov	ecx, 48					; 00000030H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	eax, DWORD PTR ___security_cookie
+	xor	eax, ebp
+	push	eax
+	lea	eax, DWORD PTR __$EHRec$[ebp]
+	mov	DWORD PTR fs:0, eax
+	mov	ecx, OFFSET __86E03ACD_xutility
+	call	@__CheckForDebuggerJustMyCode@4
+; Line 1062
+	mov	eax, DWORD PTR __Array$[ebp]
+; Line 1063
+	mov	ecx, DWORD PTR __$EHRec$[ebp]
+	mov	DWORD PTR fs:0, ecx
+	pop	ecx
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 204				; 000000ccH
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+_TEXT	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+__ehhandler$??$begin@$$BY02H$03@std@@YAPAY02HAAY132H@Z:
+	mov	edx, DWORD PTR [esp+8]
+	lea	eax, DWORD PTR [edx+12]
+	mov	ecx, DWORD PTR [edx-208]
+	xor	ecx, eax
+	call	@__security_check_cookie@4
+	mov	eax, OFFSET __ehfuncinfo$??$begin@$$BY02H$03@std@@YAPAY02HAAY132H@Z
+	jmp	___CxxFrameHandler3
+text$x	ENDS
+??$begin@$$BY02H$03@std@@YAPAY02HAAY132H@Z ENDP		; std::begin<int [3],4>
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z
 _TEXT	SEGMENT
@@ -1123,30 +1403,44 @@ text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT _main
 _TEXT	SEGMENT
-_end$1 = -784						; size = 4
-_<end>$L4$2 = -772					; size = 4
-_<begin>$L4$3 = -760					; size = 4
-_<range>$L4$4 = -748					; size = 4
-_colum$5 = -736						; size = 4
-_<end>$L3$6 = -724					; size = 4
-_<begin>$L3$7 = -712					; size = 4
-_<range>$L3$8 = -700					; size = 4
-_row$9 = -688						; size = 4
-_<end>$L2$10 = -676					; size = 4
-_<begin>$L2$11 = -664					; size = 4
-_<range>$L2$12 = -652					; size = 4
+_p$1 = -996						; size = 4
+_ra$2 = -984						; size = 4
+_p$3 = -972						; size = 4
+_ra$4 = -960						; size = 4
+_ra$ = -948						; size = 4
+_ar$5 = -936						; size = 4
+_<end>$L6$6 = -924					; size = 4
+_<begin>$L6$7 = -912					; size = 4
+_<range>$L6$8 = -900					; size = 4
+_row$9 = -888						; size = 4
+_<end>$L5$10 = -876					; size = 4
+_<begin>$L5$11 = -864					; size = 4
+_<range>$L5$12 = -852					; size = 4
+_arr4$ = -840						; size = 48
+_end$13 = -784						; size = 4
+_<end>$L4$14 = -772					; size = 4
+_<begin>$L4$15 = -760					; size = 4
+_<range>$L4$16 = -748					; size = 4
+_colum$17 = -736					; size = 4
+_<end>$L3$18 = -724					; size = 4
+_<begin>$L3$19 = -712					; size = 4
+_<range>$L3$20 = -700					; size = 4
+_row$21 = -688						; size = 4
+_<end>$L2$22 = -676					; size = 4
+_<begin>$L2$23 = -664					; size = 4
+_<range>$L2$24 = -652					; size = 4
 _arr3$ = -640						; size = 420
 _cnt$ = -212						; size = 4
-_colm$13 = -200						; size = 4
-_<end>$L1$14 = -188					; size = 4
-_<begin>$L1$15 = -176					; size = 4
-_<range>$L1$16 = -164					; size = 4
-_row$17 = -152						; size = 4
-_<end>$L0$18 = -140					; size = 4
-_<begin>$L0$19 = -128					; size = 4
-_<range>$L0$20 = -116					; size = 4
-_j$21 = -104						; size = 4
-_i$22 = -92						; size = 4
+_colm$25 = -200						; size = 4
+_<end>$L1$26 = -188					; size = 4
+_<begin>$L1$27 = -176					; size = 4
+_<range>$L1$28 = -164					; size = 4
+_row$29 = -152						; size = 4
+_<end>$L0$30 = -140					; size = 4
+_<begin>$L0$31 = -128					; size = 4
+_<range>$L0$32 = -116					; size = 4
+_j$33 = -104						; size = 4
+_i$34 = -92						; size = 4
 _arr$ = -80						; size = 48
 _colmcnt$ = -24						; size = 4
 _rowcnt$ = -12						; size = 4
@@ -1156,12 +1450,12 @@ _main	PROC						; COMDAT
 ; Line 3
 	push	ebp
 	mov	ebp, esp
-	sub	esp, 1172				; 00000494H
+	sub	esp, 1384				; 00000568H
 	push	ebx
 	push	esi
 	push	edi
-	lea	edi, DWORD PTR [ebp-1172]
-	mov	ecx, 293				; 00000125H
+	lea	edi, DWORD PTR [ebp-1384]
+	mov	ecx, 346				; 0000015aH
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	eax, DWORD PTR ___security_cookie
@@ -1173,33 +1467,33 @@ _main	PROC						; COMDAT
 	mov	DWORD PTR _rowcnt$[ebp], 3
 	mov	DWORD PTR _colmcnt$[ebp], 4
 ; Line 7
-	mov	DWORD PTR _i$22[ebp], 0
+	mov	DWORD PTR _i$34[ebp], 0
 	jmp	SHORT $LN4@main
 $LN2@main:
-	mov	eax, DWORD PTR _i$22[ebp]
+	mov	eax, DWORD PTR _i$34[ebp]
 	add	eax, 1
-	mov	DWORD PTR _i$22[ebp], eax
+	mov	DWORD PTR _i$34[ebp], eax
 $LN4@main:
-	cmp	DWORD PTR _i$22[ebp], 3
+	cmp	DWORD PTR _i$34[ebp], 3
 	je	SHORT $LN3@main
 ; Line 9
-	mov	DWORD PTR _j$21[ebp], 0
+	mov	DWORD PTR _j$33[ebp], 0
 	jmp	SHORT $LN7@main
 $LN5@main:
-	mov	eax, DWORD PTR _j$21[ebp]
+	mov	eax, DWORD PTR _j$33[ebp]
 	add	eax, 1
-	mov	DWORD PTR _j$21[ebp], eax
+	mov	DWORD PTR _j$33[ebp], eax
 $LN7@main:
-	cmp	DWORD PTR _j$21[ebp], 4
+	cmp	DWORD PTR _j$33[ebp], 4
 	je	SHORT $LN6@main
 ; Line 11
-	mov	eax, DWORD PTR _i$22[ebp]
-	mov	ecx, DWORD PTR _j$21[ebp]
+	mov	eax, DWORD PTR _i$34[ebp]
+	mov	ecx, DWORD PTR _j$33[ebp]
 	lea	edx, DWORD PTR [ecx+eax*4]
-	mov	eax, DWORD PTR _i$22[ebp]
+	mov	eax, DWORD PTR _i$34[ebp]
 	shl	eax, 4
 	lea	ecx, DWORD PTR _arr$[ebp+eax]
-	mov	eax, DWORD PTR _j$21[ebp]
+	mov	eax, DWORD PTR _j$33[ebp]
 	mov	DWORD PTR [ecx+eax*4], edx
 ; Line 13
 	jmp	SHORT $LN5@main
@@ -1215,47 +1509,47 @@ $LN3@main:
 	call	__RTC_CheckEsp
 ; Line 17
 	lea	eax, DWORD PTR _arr$[ebp]
-	mov	DWORD PTR _<range>$L0$20[ebp], eax
-	mov	eax, DWORD PTR _<range>$L0$20[ebp]
-	mov	DWORD PTR _<begin>$L0$19[ebp], eax
-	mov	eax, DWORD PTR _<range>$L0$20[ebp]
+	mov	DWORD PTR _<range>$L0$32[ebp], eax
+	mov	eax, DWORD PTR _<range>$L0$32[ebp]
+	mov	DWORD PTR _<begin>$L0$31[ebp], eax
+	mov	eax, DWORD PTR _<range>$L0$32[ebp]
 	add	eax, 48					; 00000030H
-	mov	DWORD PTR _<end>$L0$18[ebp], eax
+	mov	DWORD PTR _<end>$L0$30[ebp], eax
 	jmp	SHORT $LN10@main
 $LN8@main:
-	mov	eax, DWORD PTR _<begin>$L0$19[ebp]
+	mov	eax, DWORD PTR _<begin>$L0$31[ebp]
 	add	eax, 16					; 00000010H
-	mov	DWORD PTR _<begin>$L0$19[ebp], eax
+	mov	DWORD PTR _<begin>$L0$31[ebp], eax
 $LN10@main:
-	mov	eax, DWORD PTR _<begin>$L0$19[ebp]
-	cmp	eax, DWORD PTR _<end>$L0$18[ebp]
+	mov	eax, DWORD PTR _<begin>$L0$31[ebp]
+	cmp	eax, DWORD PTR _<end>$L0$30[ebp]
 	je	$LN9@main
-	mov	eax, DWORD PTR _<begin>$L0$19[ebp]
-	mov	DWORD PTR _row$17[ebp], eax
+	mov	eax, DWORD PTR _<begin>$L0$31[ebp]
+	mov	DWORD PTR _row$29[ebp], eax
 ; Line 19
-	mov	eax, DWORD PTR _row$17[ebp]
-	mov	DWORD PTR _<range>$L1$16[ebp], eax
-	mov	eax, DWORD PTR _<range>$L1$16[ebp]
-	mov	DWORD PTR _<begin>$L1$15[ebp], eax
-	mov	eax, DWORD PTR _<range>$L1$16[ebp]
+	mov	eax, DWORD PTR _row$29[ebp]
+	mov	DWORD PTR _<range>$L1$28[ebp], eax
+	mov	eax, DWORD PTR _<range>$L1$28[ebp]
+	mov	DWORD PTR _<begin>$L1$27[ebp], eax
+	mov	eax, DWORD PTR _<range>$L1$28[ebp]
 	add	eax, 16					; 00000010H
-	mov	DWORD PTR _<end>$L1$14[ebp], eax
+	mov	DWORD PTR _<end>$L1$26[ebp], eax
 	jmp	SHORT $LN13@main
 $LN11@main:
-	mov	eax, DWORD PTR _<begin>$L1$15[ebp]
+	mov	eax, DWORD PTR _<begin>$L1$27[ebp]
 	add	eax, 4
-	mov	DWORD PTR _<begin>$L1$15[ebp], eax
+	mov	DWORD PTR _<begin>$L1$27[ebp], eax
 $LN13@main:
-	mov	eax, DWORD PTR _<begin>$L1$15[ebp]
-	cmp	eax, DWORD PTR _<end>$L1$14[ebp]
+	mov	eax, DWORD PTR _<begin>$L1$27[ebp]
+	cmp	eax, DWORD PTR _<end>$L1$26[ebp]
 	je	SHORT $LN12@main
-	mov	eax, DWORD PTR _<begin>$L1$15[ebp]
+	mov	eax, DWORD PTR _<begin>$L1$27[ebp]
 	mov	ecx, DWORD PTR [eax]
-	mov	DWORD PTR _colm$13[ebp], ecx
+	mov	DWORD PTR _colm$25[ebp], ecx
 ; Line 21
 	push	OFFSET ??_C@_01CLKCMJKC@?5@
 	mov	esi, esp
-	mov	eax, DWORD PTR _colm$13[ebp]
+	mov	eax, DWORD PTR _colm$25[ebp]
 	push	eax
 	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z
@@ -1299,65 +1593,65 @@ $LN9@main:
 	add	esp, 12					; 0000000cH
 ; Line 29
 	lea	eax, DWORD PTR _arr3$[ebp]
-	mov	DWORD PTR _<range>$L2$12[ebp], eax
-	mov	eax, DWORD PTR _<range>$L2$12[ebp]
-	mov	DWORD PTR _<begin>$L2$11[ebp], eax
-	mov	eax, DWORD PTR _<range>$L2$12[ebp]
+	mov	DWORD PTR _<range>$L2$24[ebp], eax
+	mov	eax, DWORD PTR _<range>$L2$24[ebp]
+	mov	DWORD PTR _<begin>$L2$23[ebp], eax
+	mov	eax, DWORD PTR _<range>$L2$24[ebp]
 	add	eax, 420				; 000001a4H
-	mov	DWORD PTR _<end>$L2$10[ebp], eax
+	mov	DWORD PTR _<end>$L2$22[ebp], eax
 	jmp	SHORT $LN16@main
 $LN14@main:
-	mov	eax, DWORD PTR _<begin>$L2$11[ebp]
+	mov	eax, DWORD PTR _<begin>$L2$23[ebp]
 	add	eax, 140				; 0000008cH
-	mov	DWORD PTR _<begin>$L2$11[ebp], eax
+	mov	DWORD PTR _<begin>$L2$23[ebp], eax
 $LN16@main:
-	mov	eax, DWORD PTR _<begin>$L2$11[ebp]
-	cmp	eax, DWORD PTR _<end>$L2$10[ebp]
+	mov	eax, DWORD PTR _<begin>$L2$23[ebp]
+	cmp	eax, DWORD PTR _<end>$L2$22[ebp]
 	je	$LN15@main
-	mov	eax, DWORD PTR _<begin>$L2$11[ebp]
-	mov	DWORD PTR _row$9[ebp], eax
+	mov	eax, DWORD PTR _<begin>$L2$23[ebp]
+	mov	DWORD PTR _row$21[ebp], eax
 ; Line 31
-	mov	eax, DWORD PTR _row$9[ebp]
-	mov	DWORD PTR _<range>$L3$8[ebp], eax
-	mov	eax, DWORD PTR _<range>$L3$8[ebp]
-	mov	DWORD PTR _<begin>$L3$7[ebp], eax
-	mov	eax, DWORD PTR _<range>$L3$8[ebp]
+	mov	eax, DWORD PTR _row$21[ebp]
+	mov	DWORD PTR _<range>$L3$20[ebp], eax
+	mov	eax, DWORD PTR _<range>$L3$20[ebp]
+	mov	DWORD PTR _<begin>$L3$19[ebp], eax
+	mov	eax, DWORD PTR _<range>$L3$20[ebp]
 	add	eax, 140				; 0000008cH
-	mov	DWORD PTR _<end>$L3$6[ebp], eax
+	mov	DWORD PTR _<end>$L3$18[ebp], eax
 	jmp	SHORT $LN19@main
 $LN17@main:
-	mov	eax, DWORD PTR _<begin>$L3$7[ebp]
+	mov	eax, DWORD PTR _<begin>$L3$19[ebp]
 	add	eax, 28					; 0000001cH
-	mov	DWORD PTR _<begin>$L3$7[ebp], eax
+	mov	DWORD PTR _<begin>$L3$19[ebp], eax
 $LN19@main:
-	mov	eax, DWORD PTR _<begin>$L3$7[ebp]
-	cmp	eax, DWORD PTR _<end>$L3$6[ebp]
+	mov	eax, DWORD PTR _<begin>$L3$19[ebp]
+	cmp	eax, DWORD PTR _<end>$L3$18[ebp]
 	je	$LN18@main
-	mov	eax, DWORD PTR _<begin>$L3$7[ebp]
-	mov	DWORD PTR _colum$5[ebp], eax
+	mov	eax, DWORD PTR _<begin>$L3$19[ebp]
+	mov	DWORD PTR _colum$17[ebp], eax
 ; Line 33
-	mov	eax, DWORD PTR _colum$5[ebp]
-	mov	DWORD PTR _<range>$L4$4[ebp], eax
-	mov	eax, DWORD PTR _<range>$L4$4[ebp]
-	mov	DWORD PTR _<begin>$L4$3[ebp], eax
-	mov	eax, DWORD PTR _<range>$L4$4[ebp]
+	mov	eax, DWORD PTR _colum$17[ebp]
+	mov	DWORD PTR _<range>$L4$16[ebp], eax
+	mov	eax, DWORD PTR _<range>$L4$16[ebp]
+	mov	DWORD PTR _<begin>$L4$15[ebp], eax
+	mov	eax, DWORD PTR _<range>$L4$16[ebp]
 	add	eax, 28					; 0000001cH
-	mov	DWORD PTR _<end>$L4$2[ebp], eax
+	mov	DWORD PTR _<end>$L4$14[ebp], eax
 	jmp	SHORT $LN22@main
 $LN20@main:
-	mov	eax, DWORD PTR _<begin>$L4$3[ebp]
+	mov	eax, DWORD PTR _<begin>$L4$15[ebp]
 	add	eax, 4
-	mov	DWORD PTR _<begin>$L4$3[ebp], eax
+	mov	DWORD PTR _<begin>$L4$15[ebp], eax
 $LN22@main:
-	mov	eax, DWORD PTR _<begin>$L4$3[ebp]
-	cmp	eax, DWORD PTR _<end>$L4$2[ebp]
+	mov	eax, DWORD PTR _<begin>$L4$15[ebp]
+	cmp	eax, DWORD PTR _<end>$L4$14[ebp]
 	je	SHORT $LN21@main
-	mov	eax, DWORD PTR _<begin>$L4$3[ebp]
+	mov	eax, DWORD PTR _<begin>$L4$15[ebp]
 	mov	ecx, DWORD PTR [eax]
-	mov	DWORD PTR _end$1[ebp], ecx
+	mov	DWORD PTR _end$13[ebp], ecx
 ; Line 35
 	mov	eax, DWORD PTR _cnt$[ebp]
-	mov	DWORD PTR _end$1[ebp], eax
+	mov	DWORD PTR _end$13[ebp], eax
 ; Line 36
 	mov	eax, DWORD PTR _cnt$[ebp]
 	add	eax, 1
@@ -1365,7 +1659,7 @@ $LN22@main:
 ; Line 37
 	push	OFFSET ??_C@_01CLKCMJKC@?5@
 	mov	esi, esp
-	mov	eax, DWORD PTR _end$1[ebp]
+	mov	eax, DWORD PTR _end$13[ebp]
 	push	eax
 	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z
@@ -1383,18 +1677,300 @@ $LN18@main:
 ; Line 40
 	jmp	$LN14@main
 $LN15@main:
-; Line 41
+	mov	esi, esp
+	push	OFFSET ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+; Line 42
+	mov	esi, esp
+	push	OFFSET ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+	push	OFFSET ??_C@_0CH@MANIALAA@?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@
+	mov	eax, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	push	eax
+	call	??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z ; std::operator<<<std::char_traits<char> >
+	add	esp, 8
+	mov	ecx, eax
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+; Line 44
+	mov	DWORD PTR _arr4$[ebp], 1
+	mov	DWORD PTR _arr4$[ebp+4], 2
+	mov	DWORD PTR _arr4$[ebp+8], 3
+; Line 45
+	mov	DWORD PTR _arr4$[ebp+12], 4
+	mov	DWORD PTR _arr4$[ebp+16], 5
+	mov	DWORD PTR _arr4$[ebp+20], 6
+; Line 46
+	mov	DWORD PTR _arr4$[ebp+24], 7
+	mov	DWORD PTR _arr4$[ebp+28], 8
+	mov	DWORD PTR _arr4$[ebp+32], 9
+; Line 47
+	mov	DWORD PTR _arr4$[ebp+36], 10		; 0000000aH
+	mov	DWORD PTR _arr4$[ebp+40], 11		; 0000000bH
+	mov	DWORD PTR _arr4$[ebp+44], 12		; 0000000cH
+; Line 50
+	lea	eax, DWORD PTR _arr4$[ebp]
+	mov	DWORD PTR _<range>$L5$12[ebp], eax
+	mov	eax, DWORD PTR _<range>$L5$12[ebp]
+	mov	DWORD PTR _<begin>$L5$11[ebp], eax
+	mov	eax, DWORD PTR _<range>$L5$12[ebp]
+	add	eax, 48					; 00000030H
+	mov	DWORD PTR _<end>$L5$10[ebp], eax
+	jmp	SHORT $LN25@main
+$LN23@main:
+	mov	eax, DWORD PTR _<begin>$L5$11[ebp]
+	add	eax, 12					; 0000000cH
+	mov	DWORD PTR _<begin>$L5$11[ebp], eax
+$LN25@main:
+	mov	eax, DWORD PTR _<begin>$L5$11[ebp]
+	cmp	eax, DWORD PTR _<end>$L5$10[ebp]
+	je	$LN24@main
+	mov	eax, DWORD PTR _<begin>$L5$11[ebp]
+	mov	DWORD PTR _row$9[ebp], eax
+; Line 51
+	mov	eax, DWORD PTR _row$9[ebp]
+	mov	DWORD PTR _<range>$L6$8[ebp], eax
+	mov	eax, DWORD PTR _<range>$L6$8[ebp]
+	mov	DWORD PTR _<begin>$L6$7[ebp], eax
+	mov	eax, DWORD PTR _<range>$L6$8[ebp]
+	add	eax, 12					; 0000000cH
+	mov	DWORD PTR _<end>$L6$6[ebp], eax
+	jmp	SHORT $LN28@main
+$LN26@main:
+	mov	eax, DWORD PTR _<begin>$L6$7[ebp]
+	add	eax, 4
+	mov	DWORD PTR _<begin>$L6$7[ebp], eax
+$LN28@main:
+	mov	eax, DWORD PTR _<begin>$L6$7[ebp]
+	cmp	eax, DWORD PTR _<end>$L6$6[ebp]
+	je	SHORT $LN27@main
+	mov	eax, DWORD PTR _<begin>$L6$7[ebp]
+	mov	ecx, DWORD PTR [eax]
+	mov	DWORD PTR _ar$5[ebp], ecx
+; Line 52
+	mov	esi, esp
+	mov	eax, DWORD PTR _ar$5[ebp]
+	push	eax
+	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+	jmp	SHORT $LN26@main
+$LN27@main:
+; Line 53
+	mov	esi, esp
+	push	OFFSET ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+; Line 54
+	jmp	$LN23@main
+$LN24@main:
+; Line 56
+	mov	esi, esp
+	push	OFFSET ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+	push	OFFSET ??_C@_0CH@MANIALAA@?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@
+	mov	eax, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	push	eax
+	call	??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z ; std::operator<<<std::char_traits<char> >
+	add	esp, 8
+	mov	ecx, eax
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+; Line 58
+	lea	eax, DWORD PTR _arr4$[ebp]
+	mov	DWORD PTR _ra$[ebp], eax
+; Line 59
+	mov	esi, esp
+	push	OFFSET ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+	mov	eax, 4
+	imul	ecx, eax, 0
+	mov	edi, esp
+	mov	edx, DWORD PTR _ra$[ebp]
+	mov	eax, DWORD PTR [edx+ecx]
+	push	eax
+	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z
+	cmp	edi, esp
+	call	__RTC_CheckEsp
+	mov	ecx, eax
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+; Line 60
+	mov	eax, 12					; 0000000cH
+	shl	eax, 1
+	lea	ecx, DWORD PTR _arr4$[ebp+eax]
+	mov	DWORD PTR _ra$[ebp], ecx
+; Line 61
+	mov	esi, esp
+	push	OFFSET ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+	mov	eax, 4
+	imul	ecx, eax, 0
+	mov	edi, esp
+	mov	edx, DWORD PTR _ra$[ebp]
+	mov	eax, DWORD PTR [edx+ecx]
+	push	eax
+	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z
+	cmp	edi, esp
+	call	__RTC_CheckEsp
+	mov	ecx, eax
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+; Line 62
+	mov	esi, esp
+	push	OFFSET ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+	push	OFFSET ??_C@_0CH@MANIALAA@?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@
+	mov	eax, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	push	eax
+	call	??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z ; std::operator<<<std::char_traits<char> >
+	add	esp, 8
+	mov	ecx, eax
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+; Line 64
+	lea	eax, DWORD PTR _arr4$[ebp]
+	mov	DWORD PTR _ra$4[ebp], eax
+	jmp	SHORT $LN31@main
+$LN29@main:
+	mov	eax, DWORD PTR _ra$4[ebp]
+	add	eax, 12					; 0000000cH
+	mov	DWORD PTR _ra$4[ebp], eax
+$LN31@main:
+	lea	eax, DWORD PTR _arr4$[ebp+48]
+	cmp	DWORD PTR _ra$4[ebp], eax
+	je	SHORT $LN30@main
+; Line 65
+	mov	eax, DWORD PTR _ra$4[ebp]
+	mov	DWORD PTR _p$3[ebp], eax
+	jmp	SHORT $LN34@main
+$LN32@main:
+	mov	eax, DWORD PTR _p$3[ebp]
+	add	eax, 4
+	mov	DWORD PTR _p$3[ebp], eax
+$LN34@main:
+	mov	eax, DWORD PTR _ra$4[ebp]
+	add	eax, 12					; 0000000cH
+	cmp	DWORD PTR _p$3[ebp], eax
+	je	SHORT $LN33@main
+; Line 66
+	push	OFFSET ??_C@_01CLKCMJKC@?5@
+	mov	esi, esp
+	mov	eax, DWORD PTR _p$3[ebp]
+	mov	ecx, DWORD PTR [eax]
+	push	ecx
+	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+	push	eax
+	call	??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z ; std::operator<<<std::char_traits<char> >
+	add	esp, 8
+	jmp	SHORT $LN32@main
+$LN33@main:
+; Line 67
+	mov	esi, esp
+	push	OFFSET ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+; Line 68
+	jmp	$LN29@main
+$LN30@main:
+; Line 69
+	mov	esi, esp
+	push	OFFSET ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+	push	OFFSET ??_C@_0CH@MANIALAA@?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@
+	mov	eax, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	push	eax
+	call	??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z ; std::operator<<<std::char_traits<char> >
+	add	esp, 8
+	mov	ecx, eax
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+; Line 71
+	lea	eax, DWORD PTR _arr4$[ebp]
+	push	eax
+	call	??$begin@$$BY02H$03@std@@YAPAY02HAAY132H@Z ; std::begin<int [3],4>
+	add	esp, 4
+	mov	DWORD PTR _ra$2[ebp], eax
+	jmp	SHORT $LN37@main
+$LN35@main:
+	mov	eax, DWORD PTR _ra$2[ebp]
+	add	eax, 12					; 0000000cH
+	mov	DWORD PTR _ra$2[ebp], eax
+$LN37@main:
+	lea	eax, DWORD PTR _arr4$[ebp]
+	push	eax
+	call	??$end@$$BY02H$03@std@@YAPAY02HAAY132H@Z ; std::end<int [3],4>
+	add	esp, 4
+	cmp	DWORD PTR _ra$2[ebp], eax
+	je	$LN36@main
+; Line 72
+	mov	eax, DWORD PTR _ra$2[ebp]
+	push	eax
+	call	??$begin@H$02@std@@YAPAHAAY02H@Z	; std::begin<int,3>
+	add	esp, 4
+	mov	DWORD PTR _p$1[ebp], eax
+	jmp	SHORT $LN40@main
+$LN38@main:
+	mov	eax, DWORD PTR _p$1[ebp]
+	add	eax, 4
+	mov	DWORD PTR _p$1[ebp], eax
+$LN40@main:
+	mov	eax, DWORD PTR _ra$2[ebp]
+	push	eax
+	call	??$end@H$02@std@@YAPAHAAY02H@Z		; std::end<int,3>
+	add	esp, 4
+	cmp	DWORD PTR _p$1[ebp], eax
+	je	SHORT $LN39@main
+; Line 73
+	push	OFFSET ??_C@_01CLKCMJKC@?5@
+	mov	esi, esp
+	mov	eax, DWORD PTR _p$1[ebp]
+	mov	ecx, DWORD PTR [eax]
+	push	ecx
+	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+	push	eax
+	call	??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z ; std::operator<<<std::char_traits<char> >
+	add	esp, 8
+	jmp	SHORT $LN38@main
+$LN39@main:
+; Line 74
+	mov	esi, esp
+	push	OFFSET ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+; Line 75
+	jmp	$LN35@main
+$LN36@main:
+; Line 76
 	mov	esi, esp
 	mov	ecx, DWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
 	call	DWORD PTR __imp_?get@?$basic_istream@DU?$char_traits@D@std@@@std@@QAEHXZ
 	cmp	esi, esp
 	call	__RTC_CheckEsp
-; Line 42
+; Line 77
 	xor	eax, eax
 	push	edx
 	mov	ecx, ebp
 	push	eax
-	lea	edx, DWORD PTR $LN27@main
+	lea	edx, DWORD PTR $LN46@main
 	call	@_RTC_CheckStackVars@8
 	pop	eax
 	pop	edx
@@ -1404,30 +1980,39 @@ $LN15@main:
 	mov	ecx, DWORD PTR __$ArrayPad$[ebp]
 	xor	ecx, ebp
 	call	@__security_check_cookie@4
-	add	esp, 1172				; 00000494H
+	add	esp, 1384				; 00000568H
 	cmp	ebp, esp
 	call	__RTC_CheckEsp
 	mov	esp, ebp
 	pop	ebp
 	ret	0
 	npad	1
-$LN27@main:
-	DD	2
-	DD	$LN26@main
-$LN26@main:
+$LN46@main:
+	DD	3
+	DD	$LN45@main
+$LN45@main:
 	DD	-80					; ffffffb0H
 	DD	48					; 00000030H
-	DD	$LN24@main
+	DD	$LN42@main
 	DD	-640					; fffffd80H
 	DD	420					; 000001a4H
-	DD	$LN25@main
-$LN25@main:
+	DD	$LN43@main
+	DD	-840					; fffffcb8H
+	DD	48					; 00000030H
+	DD	$LN44@main
+$LN44@main:
+	DB	97					; 00000061H
+	DB	114					; 00000072H
+	DB	114					; 00000072H
+	DB	52					; 00000034H
+	DB	0
+$LN43@main:
 	DB	97					; 00000061H
 	DB	114					; 00000072H
 	DB	114					; 00000072H
 	DB	51					; 00000033H
 	DB	0
-$LN24@main:
+$LN42@main:
 	DB	97					; 00000061H
 	DB	114					; 00000072H
 	DB	114					; 00000072H
@@ -1626,7 +2211,7 @@ ___formal$ = 8						; size = 4
 ___formal$ = 12						; size = 4
 ?__empty_global_delete@@YAXPAXI@Z PROC			; __empty_global_delete, COMDAT
 ; File C:\Users\R2\Desktop\yoda\learning_myself\c_c++\Visual_c++\c++_Primer_book\src\Main30.cpp
-; Line 43
+; Line 78
 	push	ebp
 	mov	ebp, esp
 	sub	esp, 192				; 000000c0H
@@ -1656,7 +2241,7 @@ _TEXT	SEGMENT
 ___formal$ = 8						; size = 4
 ?__empty_global_delete@@YAXPAX@Z PROC			; __empty_global_delete, COMDAT
 ; File C:\Users\R2\Desktop\yoda\learning_myself\c_c++\Visual_c++\c++_Primer_book\src\Main30.cpp
-; Line 43
+; Line 78
 	push	ebp
 	mov	ebp, esp
 	sub	esp, 192				; 000000c0H

@@ -37,6 +37,46 @@ int main() {
 				std::cout << end << " ";
 			}
 		}
+	}std::cout << std::endl;
+
+	std::cout << "======================================" << std::endl;
+	int arr4[4][3] = {
+		{1,2,3},
+		{4,5,6},
+		{7,8,9},
+		{10,11,12}
+	};
+
+	for (int (&row)[3] : arr4) {
+		for (int ar : row)
+			std::cout << ar;
+		std::cout << std::endl;
 	}
-	std::cin.get();
+	
+	std::cout << "======================================" << std::endl;
+
+	int	(*ra)[3] = arr4;
+	std::cout << **ra << std::endl;
+	ra = &arr4[2];
+	std::cout << **ra << std::endl;
+	std::cout << "======================================" << std::endl;
+	using int_array = int[3];
+	for (int (*p)[3] = arr4; ra != arr4 + 4; ra++) {
+		for (int* p = *ra; p != *ra + 3; p++) {
+			std::cout << *p << " ";
+		} std::cout<< std::endl;
+	}
+	std::cout << "======================================" << std::endl;
+	using int_array = int[3];
+	for (int_array(*ra) = std::begin(arr4); ra != std::end(arr4); ra++) {
+		for (int* p = std::begin(*ra); p != std::end(*ra); p++) {
+			std::cout << *p << " ";
+		}std::cout << std::endl;
+	}
+
+	std::cout << "======================================" << std::endl;
+	using int_array = int*;
+	typedef int int_one;
+	int_one a = 1;
+  	std::cin.get();
 }
