@@ -26,7 +26,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Main30.cpp">
+    <ClCompile Include="src\Main31.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
