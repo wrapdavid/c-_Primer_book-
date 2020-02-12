@@ -24,7 +24,7 @@
     <ClInclude Include="src\Version_test.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Main36.cpp" />
+    <ClCompile Include="src\Main37.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
