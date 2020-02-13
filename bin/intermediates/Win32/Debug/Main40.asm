@@ -90,12 +90,14 @@ PUBLIC	?length@?$_Narrow_char_traits@DH@std@@SAIQBD@Z	; std::_Narrow_char_traits
 PUBLIC	?eq_int_type@?$_Narrow_char_traits@DH@std@@SA_NABH0@Z ; std::_Narrow_char_traits<char,int>::eq_int_type
 PUBLIC	?eof@?$_Narrow_char_traits@DH@std@@SAHXZ	; std::_Narrow_char_traits<char,int>::eof
 PUBLIC	??$_Min_value@I@std@@YAABIABI0@Z		; std::_Min_value<unsigned int>
-PUBLIC	?is_prefix@@YA_NABV?$vector@HV?$allocator@H@std@@@std@@0@Z ; is_prefix
+PUBLIC	?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z ; is_prefix
 PUBLIC	??0?$allocator@H@std@@QAE@XZ			; std::allocator<int>::allocator<int>
 PUBLIC	?deallocate@?$allocator@H@std@@QAEXQAHI@Z	; std::allocator<int>::deallocate
 PUBLIC	?allocate@?$allocator@H@std@@QAEPAHI@Z		; std::allocator<int>::allocate
 PUBLIC	?max_size@?$_Default_allocator_traits@V?$allocator@H@std@@@std@@SAIABV?$allocator@H@2@@Z ; std::_Default_allocator_traits<std::allocator<int> >::max_size
+PUBLIC	?select_on_container_copy_construction@?$_Default_allocator_traits@V?$allocator@H@std@@@std@@SA?AV?$allocator@H@2@ABV32@@Z ; std::_Default_allocator_traits<std::allocator<int> >::select_on_container_copy_construction
 PUBLIC	??0?$vector@HV?$allocator@H@std@@@std@@QAE@V?$initializer_list@H@1@ABV?$allocator@H@1@@Z ; std::vector<int,std::allocator<int> >::vector<int,std::allocator<int> >
+PUBLIC	??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z ; std::vector<int,std::allocator<int> >::vector<int,std::allocator<int> >
 PUBLIC	??1?$vector@HV?$allocator@H@std@@@std@@QAE@XZ	; std::vector<int,std::allocator<int> >::~vector<int,std::allocator<int> >
 PUBLIC	?size@?$vector@HV?$allocator@H@std@@@std@@QBEIXZ ; std::vector<int,std::allocator<int> >::size
 PUBLIC	?max_size@?$vector@HV?$allocator@H@std@@@std@@QBEIXZ ; std::vector<int,std::allocator<int> >::max_size
@@ -121,15 +123,19 @@ PUBLIC	?allocate@?$allocator@U_Container_proxy@std@@@std@@QAEPAU_Container_proxy
 PUBLIC	??$?0H@?$allocator@U_Container_proxy@std@@@std@@QAE@ABV?$allocator@H@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><int>
 PUBLIC	??$exchange@PAU_Container_proxy@std@@$$T@std@@YAPAU_Container_proxy@0@AAPAU10@$$QA$$T@Z ; std::exchange<std::_Container_proxy *,std::nullptr_t>
 PUBLIC	??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAAV?$allocator@U_Container_proxy@std@@@0@QAU_Container_proxy@0@@Z ; std::_Delete_plain_internal<std::allocator<std::_Container_proxy> >
-PUBLIC	??$?0ABV?$allocator@H@std@@$$V@?$_Compressed_pair@V?$allocator@H@std@@V?$_Vector_val@U?$_Simple_types@H@std@@@2@$00@std@@QAE@U_One_then_variadic_args_t@1@ABV?$allocator@H@1@@Z ; std::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1>::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1><std::allocator<int> const &>
+PUBLIC	??$?0V?$allocator@H@std@@$$V@?$_Compressed_pair@V?$allocator@H@std@@V?$_Vector_val@U?$_Simple_types@H@std@@@2@$00@std@@QAE@U_One_then_variadic_args_t@1@$$QAV?$allocator@H@1@@Z ; std::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1>::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1><std::allocator<int> >
 PUBLIC	??0?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QAE@AAV?$allocator@U_Container_proxy@std@@@1@AAU_Container_base12@1@@Z ; std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >
 PUBLIC	??1?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QAE@XZ ; std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::~_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >
+PUBLIC	??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ ; std::_Tidy_guard<std::vector<int,std::allocator<int> > >::~_Tidy_guard<std::vector<int,std::allocator<int> > >
+PUBLIC	??$_Ucopy@PAH@?$vector@HV?$allocator@H@std@@@std@@AAEPAHPAH00@Z ; std::vector<int,std::allocator<int> >::_Ucopy<int *>
+PUBLIC	??$?0ABV?$allocator@H@std@@$$V@?$_Compressed_pair@V?$allocator@H@std@@V?$_Vector_val@U?$_Simple_types@H@std@@@2@$00@std@@QAE@U_One_then_variadic_args_t@1@ABV?$allocator@H@1@@Z ; std::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1>::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1><std::allocator<int> const &>
 PUBLIC	??$_Range_construct_or_tidy@PBH@?$vector@HV?$allocator@H@std@@@std@@AAEXPBH0Uforward_iterator_tag@1@@Z ; std::vector<int,std::allocator<int> >::_Range_construct_or_tidy<int const *>
 PUBLIC	??$_Unfancy@U_Container_proxy@std@@@std@@YAPAU_Container_proxy@0@PAU10@@Z ; std::_Unfancy<std::_Container_proxy>
 PUBLIC	??$_Allocate@$07U_Default_allocate_traits@std@@$0A@@std@@YAPAXI@Z ; std::_Allocate<8,std::_Default_allocate_traits,0>
 PUBLIC	??$_Deallocate@$07$0A@@std@@YAXPAXI@Z		; std::_Deallocate<8,0>
 PUBLIC	??$_Get_size_of_n@$07@std@@YAII@Z		; std::_Get_size_of_n<8>
 PUBLIC	??$_Destroy_range@V?$allocator@H@std@@@std@@YAXPAHQAHAAV?$allocator@H@0@@Z ; std::_Destroy_range<std::allocator<int> >
+PUBLIC	??$_Get_size_of_n@$03@std@@YAII@Z		; std::_Get_size_of_n<4>
 PUBLIC	??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z ; std::basic_ostream<char,std::char_traits<char> >::_Sentry_base::_Sentry_base
 PUBLIC	??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ ; std::basic_ostream<char,std::char_traits<char> >::_Sentry_base::~_Sentry_base
 PUBLIC	??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z ; std::basic_ostream<char,std::char_traits<char> >::sentry::sentry
@@ -138,16 +144,18 @@ PUBLIC	??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QBE_NXZ ; std::bas
 PUBLIC	??$addressof@U_Container_proxy@std@@@std@@YAPAU_Container_proxy@0@AAU10@@Z ; std::addressof<std::_Container_proxy>
 PUBLIC	??$forward@PAU_Container_base12@std@@@std@@YA$$QAPAU_Container_base12@0@AAPAU10@@Z ; std::forward<std::_Container_base12 *>
 PUBLIC	??$_Deallocate_plain@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAAV?$allocator@U_Container_proxy@std@@@0@QAU_Container_proxy@0@@Z ; std::_Deallocate_plain<std::allocator<std::_Container_proxy> >
+PUBLIC	??$forward@V?$allocator@H@std@@@std@@YA$$QAV?$allocator@H@0@AAV10@@Z ; std::forward<std::allocator<int> >
+PUBLIC	??$_Uninitialized_copy@PAHV?$allocator@H@std@@@std@@YAPAHQAH0PAHAAV?$allocator@H@0@@Z ; std::_Uninitialized_copy<int *,std::allocator<int> >
 PUBLIC	??$forward@ABV?$allocator@H@std@@@std@@YAABV?$allocator@H@0@ABV10@@Z ; std::forward<std::allocator<int> const &>
 PUBLIC	??$distance@PBH@std@@YAHPBH0@Z			; std::distance<int const *>
-PUBLIC	??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ ; std::_Tidy_guard<std::vector<int,std::allocator<int> > >::~_Tidy_guard<std::vector<int,std::allocator<int> > >
 PUBLIC	??$_Ucopy@PBH@?$vector@HV?$allocator@H@std@@@std@@AAEPAHPBH0PAH@Z ; std::vector<int,std::allocator<int> >::_Ucopy<int const *>
 PUBLIC	??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPAXI@Z ; std::_Allocate_manually_vector_aligned<std::_Default_allocate_traits>
-PUBLIC	??$_Get_size_of_n@$03@std@@YAII@Z		; std::_Get_size_of_n<4>
 PUBLIC	?deallocate@?$_Default_allocator_traits@V?$allocator@U_Container_proxy@std@@@std@@@std@@SAXAAV?$allocator@U_Container_proxy@std@@@2@QAU_Container_proxy@2@I@Z ; std::_Default_allocator_traits<std::allocator<std::_Container_proxy> >::deallocate
+PUBLIC	??$_Get_unwrapped@H@std@@YAPAHQAH@Z		; std::_Get_unwrapped<int>
+PUBLIC	??$_Unfancy@H@std@@YAPAHPAH@Z			; std::_Unfancy<int>
+PUBLIC	??$_Copy_memmove@PAHPAH@std@@YAPAHPAH00@Z	; std::_Copy_memmove<int *,int *>
 PUBLIC	??$_Uninitialized_copy@PBHV?$allocator@H@std@@@std@@YAPAHQBH0PAHAAV?$allocator@H@0@@Z ; std::_Uninitialized_copy<int const *,std::allocator<int> >
 PUBLIC	??$_Get_unwrapped@$$CBH@std@@YAPBHQBH@Z		; std::_Get_unwrapped<int const >
-PUBLIC	??$_Unfancy@H@std@@YAPAHPAH@Z			; std::_Unfancy<int>
 PUBLIC	??$_Copy_memmove@PBHPAH@std@@YAPAHPBH0PAH@Z	; std::_Copy_memmove<int const *,int *>
 PUBLIC	__JustMyCode_Default
 PUBLIC	??_7exception@std@@6B@				; std::exception::`vftable'
@@ -553,7 +561,7 @@ CONST	SEGMENT
 CONST	ENDS
 ;	COMDAT xdata$x
 xdata$x	SEGMENT
-__ehfuncinfo$??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ DD 019930522H
+__ehfuncinfo$??$forward@ABV?$allocator@H@std@@@std@@YAABV?$allocator@H@0@ABV10@@Z DD 019930522H
 	DD	00H
 	DD	00H
 	DD	2 DUP(00H)
@@ -563,7 +571,7 @@ __ehfuncinfo$??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ 
 xdata$x	ENDS
 ;	COMDAT xdata$x
 xdata$x	SEGMENT
-__ehfuncinfo$??$forward@ABV?$allocator@H@std@@@std@@YAABV?$allocator@H@0@ABV10@@Z DD 019930522H
+__ehfuncinfo$??$forward@V?$allocator@H@std@@@std@@YA$$QAV?$allocator@H@0@AAV10@@Z DD 019930522H
 	DD	00H
 	DD	00H
 	DD	2 DUP(00H)
@@ -667,6 +675,16 @@ __ehfuncinfo$??$_Range_construct_or_tidy@PBH@?$vector@HV?$allocator@H@std@@@std@
 xdata$x	ENDS
 ;	COMDAT xdata$x
 xdata$x	SEGMENT
+__ehfuncinfo$??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ DD 019930522H
+	DD	00H
+	DD	00H
+	DD	2 DUP(00H)
+	DD	2 DUP(00H)
+	DD	00H
+	DD	05H
+xdata$x	ENDS
+;	COMDAT xdata$x
+xdata$x	SEGMENT
 __ehfuncinfo$??1?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QAE@XZ DD 019930522H
 	DD	00H
 	DD	00H
@@ -757,8 +775,10 @@ __unwindtable$_main DD 0ffffffffH
 	DD	FLAT:__unwindfunclet$_main$0
 	DD	00H
 	DD	FLAT:__unwindfunclet$_main$1
+	DD	01H
+	DD	FLAT:__unwindfunclet$_main$2
 __ehfuncinfo$_main DD 019930522H
-	DD	02H
+	DD	03H
 	DD	FLAT:__unwindtable$_main
 	DD	2 DUP(00H)
 	DD	2 DUP(00H)
@@ -857,6 +877,20 @@ __ehfuncinfo$??1?$vector@HV?$allocator@H@std@@@std@@QAE@XZ DD 019930522H
 xdata$x	ENDS
 ;	COMDAT xdata$x
 xdata$x	SEGMENT
+__unwindtable$??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z DD 0ffffffffH
+	DD	FLAT:__unwindfunclet$??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z$0
+	DD	00H
+	DD	FLAT:__unwindfunclet$??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z$1
+__ehfuncinfo$??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z DD 019930522H
+	DD	02H
+	DD	FLAT:__unwindtable$??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z
+	DD	2 DUP(00H)
+	DD	2 DUP(00H)
+	DD	00H
+	DD	01H
+xdata$x	ENDS
+;	COMDAT xdata$x
+xdata$x	SEGMENT
 __unwindtable$??0?$vector@HV?$allocator@H@std@@@std@@QAE@V?$initializer_list@H@1@ABV?$allocator@H@1@@Z DD 0ffffffffH
 	DD	FLAT:__unwindfunclet$??0?$vector@HV?$allocator@H@std@@@std@@QAE@V?$initializer_list@H@1@ABV?$allocator@H@1@@Z$0
 __ehfuncinfo$??0?$vector@HV?$allocator@H@std@@@std@@QAE@V?$initializer_list@H@1@ABV?$allocator@H@1@@Z DD 019930522H
@@ -886,6 +920,22 @@ __ehfuncinfo$??0?$allocator@H@std@@QAE@XZ DD 019930522H
 	DD	2 DUP(00H)
 	DD	00H
 	DD	05H
+xdata$x	ENDS
+;	COMDAT xdata$x
+xdata$x	SEGMENT
+__unwindtable$?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z DD 0ffffffffH
+	DD	FLAT:__unwindfunclet$?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z$0
+	DD	00H
+	DD	FLAT:__unwindfunclet$?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z$1
+	DD	01H
+	DD	FLAT:__unwindfunclet$?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z$2
+__ehfuncinfo$?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z DD 019930522H
+	DD	03H
+	DD	FLAT:__unwindtable$?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z
+	DD	2 DUP(00H)
+	DD	2 DUP(00H)
+	DD	00H
+	DD	01H
 xdata$x	ENDS
 ;	COMDAT xdata$x
 xdata$x	SEGMENT
@@ -1130,39 +1180,6 @@ __Dest$ = 16						; size = 4
 ??$_Copy_memmove@PBHPAH@std@@YAPAHPBH0PAH@Z ENDP	; std::_Copy_memmove<int const *,int *>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT ??$_Unfancy@H@std@@YAPAHPAH@Z
-_TEXT	SEGMENT
-__Ptr$ = 8						; size = 4
-??$_Unfancy@H@std@@YAPAHPAH@Z PROC			; std::_Unfancy<int>, COMDAT
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xstddef
-; Line 293
-	push	ebp
-	mov	ebp, esp
-	sub	esp, 192				; 000000c0H
-	push	ebx
-	push	esi
-	push	edi
-	lea	edi, DWORD PTR [ebp-192]
-	mov	ecx, 48					; 00000030H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	ecx, OFFSET __46C44D95_xstddef
-	call	@__CheckForDebuggerJustMyCode@4
-; Line 294
-	mov	eax, DWORD PTR __Ptr$[ebp]
-; Line 295
-	pop	edi
-	pop	esi
-	pop	ebx
-	add	esp, 192				; 000000c0H
-	cmp	ebp, esp
-	call	__RTC_CheckEsp
-	mov	esp, ebp
-	pop	ebp
-	ret	0
-??$_Unfancy@H@std@@YAPAHPAH@Z ENDP			; std::_Unfancy<int>
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ??$_Get_unwrapped@$$CBH@std@@YAPBHQBH@Z
 _TEXT	SEGMENT
 __Ptr$ = 8						; size = 4
@@ -1265,6 +1282,134 @@ __Al$ = 20						; size = 4
 ??$_Uninitialized_copy@PBHV?$allocator@H@std@@@std@@YAPAHQBH0PAHAAV?$allocator@H@0@@Z ENDP ; std::_Uninitialized_copy<int const *,std::allocator<int> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??$_Copy_memmove@PAHPAH@std@@YAPAHPAH00@Z
+_TEXT	SEGMENT
+__Count$ = -44						; size = 4
+__Dest_ch$ = -32					; size = 4
+__Last_ch$ = -20					; size = 4
+__First_ch$ = -8					; size = 4
+__First$ = 8						; size = 4
+__Last$ = 12						; size = 4
+__Dest$ = 16						; size = 4
+??$_Copy_memmove@PAHPAH@std@@YAPAHPAH00@Z PROC		; std::_Copy_memmove<int *,int *>, COMDAT
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility
+; Line 1739
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 240				; 000000f0H
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-240]
+	mov	ecx, 60					; 0000003cH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	ecx, OFFSET __86E03ACD_xutility
+	call	@__CheckForDebuggerJustMyCode@4
+; Line 1740
+	mov	eax, DWORD PTR __First$[ebp]
+	mov	DWORD PTR __First_ch$[ebp], eax
+; Line 1741
+	mov	eax, DWORD PTR __Last$[ebp]
+	mov	DWORD PTR __Last_ch$[ebp], eax
+; Line 1742
+	mov	eax, DWORD PTR __Dest$[ebp]
+	mov	DWORD PTR __Dest_ch$[ebp], eax
+; Line 1743
+	mov	eax, DWORD PTR __Last_ch$[ebp]
+	sub	eax, DWORD PTR __First_ch$[ebp]
+	mov	DWORD PTR __Count$[ebp], eax
+; Line 1744
+	mov	eax, DWORD PTR __Count$[ebp]
+	push	eax
+	mov	ecx, DWORD PTR __First_ch$[ebp]
+	push	ecx
+	mov	edx, DWORD PTR __Dest_ch$[ebp]
+	push	edx
+	call	_memmove
+	add	esp, 12					; 0000000cH
+; Line 1745
+	mov	eax, DWORD PTR __Dest_ch$[ebp]
+	add	eax, DWORD PTR __Count$[ebp]
+; Line 1746
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 240				; 000000f0H
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+??$_Copy_memmove@PAHPAH@std@@YAPAHPAH00@Z ENDP		; std::_Copy_memmove<int *,int *>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??$_Unfancy@H@std@@YAPAHPAH@Z
+_TEXT	SEGMENT
+__Ptr$ = 8						; size = 4
+??$_Unfancy@H@std@@YAPAHPAH@Z PROC			; std::_Unfancy<int>, COMDAT
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xstddef
+; Line 293
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 192				; 000000c0H
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-192]
+	mov	ecx, 48					; 00000030H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	ecx, OFFSET __46C44D95_xstddef
+	call	@__CheckForDebuggerJustMyCode@4
+; Line 294
+	mov	eax, DWORD PTR __Ptr$[ebp]
+; Line 295
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 192				; 000000c0H
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+??$_Unfancy@H@std@@YAPAHPAH@Z ENDP			; std::_Unfancy<int>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??$_Get_unwrapped@H@std@@YAPAHQAH@Z
+_TEXT	SEGMENT
+__Ptr$ = 8						; size = 4
+??$_Get_unwrapped@H@std@@YAPAHQAH@Z PROC		; std::_Get_unwrapped<int>, COMDAT
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility
+; Line 275
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 192				; 000000c0H
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-192]
+	mov	ecx, 48					; 00000030H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	ecx, OFFSET __86E03ACD_xutility
+	call	@__CheckForDebuggerJustMyCode@4
+; Line 276
+	mov	eax, DWORD PTR __Ptr$[ebp]
+; Line 277
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 192				; 000000c0H
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+??$_Get_unwrapped@H@std@@YAPAHQAH@Z ENDP		; std::_Get_unwrapped<int>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ?deallocate@?$_Default_allocator_traits@V?$allocator@U_Container_proxy@std@@@std@@@std@@SAXAAV?$allocator@U_Container_proxy@std@@@2@QAU_Container_proxy@2@I@Z
 _TEXT	SEGMENT
 ___formal$ = 8						; size = 4
@@ -1304,53 +1449,6 @@ __Count$ = 16						; size = 4
 	pop	ebp
 	ret	0
 ?deallocate@?$_Default_allocator_traits@V?$allocator@U_Container_proxy@std@@@std@@@std@@SAXAAV?$allocator@U_Container_proxy@std@@@2@QAU_Container_proxy@2@I@Z ENDP ; std::_Default_allocator_traits<std::allocator<std::_Container_proxy> >::deallocate
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT ??$_Get_size_of_n@$03@std@@YAII@Z
-_TEXT	SEGMENT
-__Max_possible$1 = -20					; size = 4
-__Overflow_is_possible$ = -5				; size = 1
-__Count$ = 8						; size = 4
-??$_Get_size_of_n@$03@std@@YAII@Z PROC			; std::_Get_size_of_n<4>, COMDAT
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xmemory
-; Line 24
-	push	ebp
-	mov	ebp, esp
-	sub	esp, 216				; 000000d8H
-	push	ebx
-	push	esi
-	push	edi
-	lea	edi, DWORD PTR [ebp-216]
-	mov	ecx, 54					; 00000036H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	ecx, OFFSET __DB4EB944_xmemory
-	call	@__CheckForDebuggerJustMyCode@4
-; Line 25
-	mov	BYTE PTR __Overflow_is_possible$[ebp], 1
-; Line 29
-	mov	DWORD PTR __Max_possible$1[ebp], 1073741823 ; 3fffffffH
-; Line 30
-	cmp	DWORD PTR __Count$[ebp], 1073741823	; 3fffffffH
-	jbe	SHORT $LN2@Get_size_o
-; Line 31
-	call	?_Throw_bad_array_new_length@std@@YAXXZ	; std::_Throw_bad_array_new_length
-$LN2@Get_size_o:
-; Line 35
-	mov	eax, DWORD PTR __Count$[ebp]
-	shl	eax, 2
-$LN3@Get_size_o:
-; Line 36
-	pop	edi
-	pop	esi
-	pop	ebx
-	add	esp, 216				; 000000d8H
-	cmp	ebp, esp
-	call	__RTC_CheckEsp
-	mov	esp, ebp
-	pop	ebp
-	ret	0
-??$_Get_size_of_n@$03@std@@YAII@Z ENDP			; std::_Get_size_of_n<4>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPAXI@Z
@@ -1509,74 +1607,6 @@ __Dest$ = 16						; size = 4
 ??$_Ucopy@PBH@?$vector@HV?$allocator@H@std@@@std@@AAEPAHPBH0PAH@Z ENDP ; std::vector<int,std::allocator<int> >::_Ucopy<int const *>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT ??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ
-_TEXT	SEGMENT
-_this$ = -20						; size = 4
-__$EHRec$ = -12						; size = 12
-??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ PROC ; std::_Tidy_guard<std::vector<int,std::allocator<int> > >::~_Tidy_guard<std::vector<int,std::allocator<int> > >, COMDAT
-; _this$ = ecx
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility
-; Line 3526
-	push	ebp
-	mov	ebp, esp
-	push	-1
-	push	__ehhandler$??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ
-	mov	eax, DWORD PTR fs:0
-	push	eax
-	sub	esp, 204				; 000000ccH
-	push	ebx
-	push	esi
-	push	edi
-	push	ecx
-	lea	edi, DWORD PTR [ebp-216]
-	mov	ecx, 51					; 00000033H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	pop	ecx
-	mov	eax, DWORD PTR ___security_cookie
-	xor	eax, ebp
-	push	eax
-	lea	eax, DWORD PTR __$EHRec$[ebp]
-	mov	DWORD PTR fs:0, eax
-	mov	DWORD PTR _this$[ebp], ecx
-	mov	ecx, OFFSET __86E03ACD_xutility
-	call	@__CheckForDebuggerJustMyCode@4
-; Line 3527
-	mov	eax, DWORD PTR _this$[ebp]
-	cmp	DWORD PTR [eax], 0
-	je	SHORT $LN3@Tidy_guard
-; Line 3528
-	mov	eax, DWORD PTR _this$[ebp]
-	mov	ecx, DWORD PTR [eax]
-	call	?_Tidy@?$vector@HV?$allocator@H@std@@@std@@AAEXXZ ; std::vector<int,std::allocator<int> >::_Tidy
-$LN3@Tidy_guard:
-; Line 3530
-	mov	ecx, DWORD PTR __$EHRec$[ebp]
-	mov	DWORD PTR fs:0, ecx
-	pop	ecx
-	pop	edi
-	pop	esi
-	pop	ebx
-	add	esp, 216				; 000000d8H
-	cmp	ebp, esp
-	call	__RTC_CheckEsp
-	mov	esp, ebp
-	pop	ebp
-	ret	0
-_TEXT	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-__ehhandler$??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ:
-	mov	edx, DWORD PTR [esp+8]
-	lea	eax, DWORD PTR [edx+12]
-	mov	ecx, DWORD PTR [edx-220]
-	xor	ecx, eax
-	call	@__security_check_cookie@4
-	mov	eax, OFFSET __ehfuncinfo$??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ
-	jmp	___CxxFrameHandler3
-text$x	ENDS
-??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ ENDP ; std::_Tidy_guard<std::vector<int,std::allocator<int> > >::~_Tidy_guard<std::vector<int,std::allocator<int> > >
-; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ??$distance@PBH@std@@YAHPBH0@Z
 _TEXT	SEGMENT
 __First$ = 8						; size = 4
@@ -1669,6 +1699,132 @@ __ehhandler$??$forward@ABV?$allocator@H@std@@@std@@YAABV?$allocator@H@0@ABV10@@Z
 	jmp	___CxxFrameHandler3
 text$x	ENDS
 ??$forward@ABV?$allocator@H@std@@@std@@YAABV?$allocator@H@0@ABV10@@Z ENDP ; std::forward<std::allocator<int> const &>
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??$_Uninitialized_copy@PAHV?$allocator@H@std@@@std@@YAPAHQAH0PAHAAV?$allocator@H@0@@Z
+_TEXT	SEGMENT
+__ULast$ = -20						; size = 4
+__UFirst$ = -8						; size = 4
+__First$ = 8						; size = 4
+__Last$ = 12						; size = 4
+__Dest$ = 16						; size = 4
+__Al$ = 20						; size = 4
+??$_Uninitialized_copy@PAHV?$allocator@H@std@@@std@@YAPAHQAH0PAHAAV?$allocator@H@0@@Z PROC ; std::_Uninitialized_copy<int *,std::allocator<int> >, COMDAT
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xmemory
+; Line 1600
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 216				; 000000d8H
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-216]
+	mov	ecx, 54					; 00000036H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	ecx, OFFSET __DB4EB944_xmemory
+	call	@__CheckForDebuggerJustMyCode@4
+; Line 1605
+	mov	eax, DWORD PTR __First$[ebp]
+	push	eax
+	call	??$_Get_unwrapped@H@std@@YAPAHQAH@Z	; std::_Get_unwrapped<int>
+	add	esp, 4
+	mov	DWORD PTR __UFirst$[ebp], eax
+; Line 1606
+	mov	eax, DWORD PTR __Last$[ebp]
+	push	eax
+	call	??$_Get_unwrapped@H@std@@YAPAHQAH@Z	; std::_Get_unwrapped<int>
+	add	esp, 4
+	mov	DWORD PTR __ULast$[ebp], eax
+; Line 1610
+	mov	eax, DWORD PTR __Dest$[ebp]
+	push	eax
+	call	??$_Unfancy@H@std@@YAPAHPAH@Z		; std::_Unfancy<int>
+	add	esp, 4
+	push	eax
+	mov	ecx, DWORD PTR __ULast$[ebp]
+	push	ecx
+	mov	edx, DWORD PTR __UFirst$[ebp]
+	push	edx
+	call	??$_Copy_memmove@PAHPAH@std@@YAPAHPAH00@Z ; std::_Copy_memmove<int *,int *>
+	add	esp, 12					; 0000000cH
+; Line 1611
+	mov	eax, DWORD PTR __ULast$[ebp]
+	sub	eax, DWORD PTR __UFirst$[ebp]
+	sar	eax, 2
+	mov	ecx, DWORD PTR __Dest$[ebp]
+	lea	edx, DWORD PTR [ecx+eax*4]
+	mov	DWORD PTR __Dest$[ebp], edx
+; Line 1622
+	mov	eax, DWORD PTR __Dest$[ebp]
+; Line 1623
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 216				; 000000d8H
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+??$_Uninitialized_copy@PAHV?$allocator@H@std@@@std@@YAPAHQAH0PAHAAV?$allocator@H@0@@Z ENDP ; std::_Uninitialized_copy<int *,std::allocator<int> >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??$forward@V?$allocator@H@std@@@std@@YA$$QAV?$allocator@H@0@AAV10@@Z
+_TEXT	SEGMENT
+__$EHRec$ = -12						; size = 12
+__Arg$ = 8						; size = 4
+??$forward@V?$allocator@H@std@@@std@@YA$$QAV?$allocator@H@0@AAV10@@Z PROC ; std::forward<std::allocator<int> >, COMDAT
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\type_traits
+; Line 1420
+	push	ebp
+	mov	ebp, esp
+	push	-1
+	push	__ehhandler$??$forward@V?$allocator@H@std@@@std@@YA$$QAV?$allocator@H@0@AAV10@@Z
+	mov	eax, DWORD PTR fs:0
+	push	eax
+	sub	esp, 192				; 000000c0H
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-204]
+	mov	ecx, 48					; 00000030H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	eax, DWORD PTR ___security_cookie
+	xor	eax, ebp
+	push	eax
+	lea	eax, DWORD PTR __$EHRec$[ebp]
+	mov	DWORD PTR fs:0, eax
+	mov	ecx, OFFSET __FFC6471F_type_traits
+	call	@__CheckForDebuggerJustMyCode@4
+; Line 1421
+	mov	eax, DWORD PTR __Arg$[ebp]
+; Line 1422
+	mov	ecx, DWORD PTR __$EHRec$[ebp]
+	mov	DWORD PTR fs:0, ecx
+	pop	ecx
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 204				; 000000ccH
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+_TEXT	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+__ehhandler$??$forward@V?$allocator@H@std@@@std@@YA$$QAV?$allocator@H@0@AAV10@@Z:
+	mov	edx, DWORD PTR [esp+8]
+	lea	eax, DWORD PTR [edx+12]
+	mov	ecx, DWORD PTR [edx-208]
+	xor	ecx, eax
+	call	@__security_check_cookie@4
+	mov	eax, OFFSET __ehfuncinfo$??$forward@V?$allocator@H@std@@@std@@YA$$QAV?$allocator@H@0@AAV10@@Z
+	jmp	___CxxFrameHandler3
+text$x	ENDS
+??$forward@V?$allocator@H@std@@@std@@YA$$QAV?$allocator@H@0@AAV10@@Z ENDP ; std::forward<std::allocator<int> >
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ??$_Deallocate_plain@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAAV?$allocator@U_Container_proxy@std@@@0@QAU_Container_proxy@0@@Z
 _TEXT	SEGMENT
@@ -2249,6 +2405,53 @@ $LN1@Sentry_bas:
 ??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z ENDP ; std::basic_ostream<char,std::char_traits<char> >::_Sentry_base::_Sentry_base
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??$_Get_size_of_n@$03@std@@YAII@Z
+_TEXT	SEGMENT
+__Max_possible$1 = -20					; size = 4
+__Overflow_is_possible$ = -5				; size = 1
+__Count$ = 8						; size = 4
+??$_Get_size_of_n@$03@std@@YAII@Z PROC			; std::_Get_size_of_n<4>, COMDAT
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xmemory
+; Line 24
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 216				; 000000d8H
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-216]
+	mov	ecx, 54					; 00000036H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	ecx, OFFSET __DB4EB944_xmemory
+	call	@__CheckForDebuggerJustMyCode@4
+; Line 25
+	mov	BYTE PTR __Overflow_is_possible$[ebp], 1
+; Line 29
+	mov	DWORD PTR __Max_possible$1[ebp], 1073741823 ; 3fffffffH
+; Line 30
+	cmp	DWORD PTR __Count$[ebp], 1073741823	; 3fffffffH
+	jbe	SHORT $LN2@Get_size_o
+; Line 31
+	call	?_Throw_bad_array_new_length@std@@YAXXZ	; std::_Throw_bad_array_new_length
+$LN2@Get_size_o:
+; Line 35
+	mov	eax, DWORD PTR __Count$[ebp]
+	shl	eax, 2
+$LN3@Get_size_o:
+; Line 36
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 216				; 000000d8H
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+??$_Get_size_of_n@$03@std@@YAII@Z ENDP			; std::_Get_size_of_n<4>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ??$_Destroy_range@V?$allocator@H@std@@@std@@YAXPAHQAHAAV?$allocator@H@0@@Z
 _TEXT	SEGMENT
 __$EHRec$ = -12						; size = 12
@@ -2658,6 +2861,167 @@ __ehhandler$??$_Range_construct_or_tidy@PBH@?$vector@HV?$allocator@H@std@@@std@@
 text$x	ENDS
 ??$_Range_construct_or_tidy@PBH@?$vector@HV?$allocator@H@std@@@std@@AAEXPBH0Uforward_iterator_tag@1@@Z ENDP ; std::vector<int,std::allocator<int> >::_Range_construct_or_tidy<int const *>
 ; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??$?0ABV?$allocator@H@std@@$$V@?$_Compressed_pair@V?$allocator@H@std@@V?$_Vector_val@U?$_Simple_types@H@std@@@2@$00@std@@QAE@U_One_then_variadic_args_t@1@ABV?$allocator@H@1@@Z
+_TEXT	SEGMENT
+_this$ = -8						; size = 4
+___formal$ = 8						; size = 1
+__Val1$ = 12						; size = 4
+??$?0ABV?$allocator@H@std@@$$V@?$_Compressed_pair@V?$allocator@H@std@@V?$_Vector_val@U?$_Simple_types@H@std@@@2@$00@std@@QAE@U_One_then_variadic_args_t@1@ABV?$allocator@H@1@@Z PROC ; std::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1>::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1><std::allocator<int> const &>, COMDAT
+; _this$ = ecx
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xmemory
+; Line 1418
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 204				; 000000ccH
+	push	ebx
+	push	esi
+	push	edi
+	push	ecx
+	lea	edi, DWORD PTR [ebp-204]
+	mov	ecx, 51					; 00000033H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	pop	ecx
+	mov	DWORD PTR _this$[ebp], ecx
+	mov	ecx, OFFSET __DB4EB944_xmemory
+	call	@__CheckForDebuggerJustMyCode@4
+	mov	eax, DWORD PTR __Val1$[ebp]
+	push	eax
+	call	??$forward@ABV?$allocator@H@std@@@std@@YAABV?$allocator@H@0@ABV10@@Z ; std::forward<std::allocator<int> const &>
+	add	esp, 4
+	mov	ecx, DWORD PTR _this$[ebp]
+	call	??0?$_Vector_val@U?$_Simple_types@H@std@@@std@@QAE@XZ ; std::_Vector_val<std::_Simple_types<int> >::_Vector_val<std::_Simple_types<int> >
+	mov	eax, DWORD PTR _this$[ebp]
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 204				; 000000ccH
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	8
+??$?0ABV?$allocator@H@std@@$$V@?$_Compressed_pair@V?$allocator@H@std@@V?$_Vector_val@U?$_Simple_types@H@std@@@2@$00@std@@QAE@U_One_then_variadic_args_t@1@ABV?$allocator@H@1@@Z ENDP ; std::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1>::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1><std::allocator<int> const &>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??$_Ucopy@PAH@?$vector@HV?$allocator@H@std@@@std@@AAEPAHPAH00@Z
+_TEXT	SEGMENT
+_this$ = -8						; size = 4
+__First$ = 8						; size = 4
+__Last$ = 12						; size = 4
+__Dest$ = 16						; size = 4
+??$_Ucopy@PAH@?$vector@HV?$allocator@H@std@@@std@@AAEPAHPAH00@Z PROC ; std::vector<int,std::allocator<int> >::_Ucopy<int *>, COMDAT
+; _this$ = ecx
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector
+; Line 1543
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 204				; 000000ccH
+	push	ebx
+	push	esi
+	push	edi
+	push	ecx
+	lea	edi, DWORD PTR [ebp-204]
+	mov	ecx, 51					; 00000033H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	pop	ecx
+	mov	DWORD PTR _this$[ebp], ecx
+	mov	ecx, OFFSET __C9967FC1_vector
+	call	@__CheckForDebuggerJustMyCode@4
+; Line 1544
+	mov	ecx, DWORD PTR _this$[ebp]
+	call	?_Getal@?$vector@HV?$allocator@H@std@@@std@@AAEAAV?$allocator@H@2@XZ ; std::vector<int,std::allocator<int> >::_Getal
+	push	eax
+	mov	eax, DWORD PTR __Dest$[ebp]
+	push	eax
+	mov	ecx, DWORD PTR __Last$[ebp]
+	push	ecx
+	mov	edx, DWORD PTR __First$[ebp]
+	push	edx
+	call	??$_Uninitialized_copy@PAHV?$allocator@H@std@@@std@@YAPAHQAH0PAHAAV?$allocator@H@0@@Z ; std::_Uninitialized_copy<int *,std::allocator<int> >
+	add	esp, 16					; 00000010H
+; Line 1545
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 204				; 000000ccH
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	12					; 0000000cH
+??$_Ucopy@PAH@?$vector@HV?$allocator@H@std@@@std@@AAEPAHPAH00@Z ENDP ; std::vector<int,std::allocator<int> >::_Ucopy<int *>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ
+_TEXT	SEGMENT
+_this$ = -20						; size = 4
+__$EHRec$ = -12						; size = 12
+??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ PROC ; std::_Tidy_guard<std::vector<int,std::allocator<int> > >::~_Tidy_guard<std::vector<int,std::allocator<int> > >, COMDAT
+; _this$ = ecx
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility
+; Line 3526
+	push	ebp
+	mov	ebp, esp
+	push	-1
+	push	__ehhandler$??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ
+	mov	eax, DWORD PTR fs:0
+	push	eax
+	sub	esp, 204				; 000000ccH
+	push	ebx
+	push	esi
+	push	edi
+	push	ecx
+	lea	edi, DWORD PTR [ebp-216]
+	mov	ecx, 51					; 00000033H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	pop	ecx
+	mov	eax, DWORD PTR ___security_cookie
+	xor	eax, ebp
+	push	eax
+	lea	eax, DWORD PTR __$EHRec$[ebp]
+	mov	DWORD PTR fs:0, eax
+	mov	DWORD PTR _this$[ebp], ecx
+	mov	ecx, OFFSET __86E03ACD_xutility
+	call	@__CheckForDebuggerJustMyCode@4
+; Line 3527
+	mov	eax, DWORD PTR _this$[ebp]
+	cmp	DWORD PTR [eax], 0
+	je	SHORT $LN3@Tidy_guard
+; Line 3528
+	mov	eax, DWORD PTR _this$[ebp]
+	mov	ecx, DWORD PTR [eax]
+	call	?_Tidy@?$vector@HV?$allocator@H@std@@@std@@AAEXXZ ; std::vector<int,std::allocator<int> >::_Tidy
+$LN3@Tidy_guard:
+; Line 3530
+	mov	ecx, DWORD PTR __$EHRec$[ebp]
+	mov	DWORD PTR fs:0, ecx
+	pop	ecx
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 216				; 000000d8H
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+_TEXT	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+__ehhandler$??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ:
+	mov	edx, DWORD PTR [esp+8]
+	lea	eax, DWORD PTR [edx+12]
+	mov	ecx, DWORD PTR [edx-220]
+	xor	ecx, eax
+	call	@__security_check_cookie@4
+	mov	eax, OFFSET __ehfuncinfo$??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ
+	jmp	___CxxFrameHandler3
+text$x	ENDS
+??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ ENDP ; std::_Tidy_guard<std::vector<int,std::allocator<int> > >::~_Tidy_guard<std::vector<int,std::allocator<int> > >
+; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ??1?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QAE@XZ
 _TEXT	SEGMENT
 _this$ = -20						; size = 4
@@ -2801,12 +3165,12 @@ __Mycont$ = 12						; size = 4
 ??0?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QAE@AAV?$allocator@U_Container_proxy@std@@@1@AAU_Container_base12@1@@Z ENDP ; std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT ??$?0ABV?$allocator@H@std@@$$V@?$_Compressed_pair@V?$allocator@H@std@@V?$_Vector_val@U?$_Simple_types@H@std@@@2@$00@std@@QAE@U_One_then_variadic_args_t@1@ABV?$allocator@H@1@@Z
+;	COMDAT ??$?0V?$allocator@H@std@@$$V@?$_Compressed_pair@V?$allocator@H@std@@V?$_Vector_val@U?$_Simple_types@H@std@@@2@$00@std@@QAE@U_One_then_variadic_args_t@1@$$QAV?$allocator@H@1@@Z
 _TEXT	SEGMENT
 _this$ = -8						; size = 4
 ___formal$ = 8						; size = 1
 __Val1$ = 12						; size = 4
-??$?0ABV?$allocator@H@std@@$$V@?$_Compressed_pair@V?$allocator@H@std@@V?$_Vector_val@U?$_Simple_types@H@std@@@2@$00@std@@QAE@U_One_then_variadic_args_t@1@ABV?$allocator@H@1@@Z PROC ; std::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1>::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1><std::allocator<int> const &>, COMDAT
+??$?0V?$allocator@H@std@@$$V@?$_Compressed_pair@V?$allocator@H@std@@V?$_Vector_val@U?$_Simple_types@H@std@@@2@$00@std@@QAE@U_One_then_variadic_args_t@1@$$QAV?$allocator@H@1@@Z PROC ; std::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1>::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1><std::allocator<int> >, COMDAT
 ; _this$ = ecx
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xmemory
 ; Line 1418
@@ -2827,7 +3191,7 @@ __Val1$ = 12						; size = 4
 	call	@__CheckForDebuggerJustMyCode@4
 	mov	eax, DWORD PTR __Val1$[ebp]
 	push	eax
-	call	??$forward@ABV?$allocator@H@std@@@std@@YAABV?$allocator@H@0@ABV10@@Z ; std::forward<std::allocator<int> const &>
+	call	??$forward@V?$allocator@H@std@@@std@@YA$$QAV?$allocator@H@0@AAV10@@Z ; std::forward<std::allocator<int> >
 	add	esp, 4
 	mov	ecx, DWORD PTR _this$[ebp]
 	call	??0?$_Vector_val@U?$_Simple_types@H@std@@@std@@QAE@XZ ; std::_Vector_val<std::_Simple_types<int> >::_Vector_val<std::_Simple_types<int> >
@@ -2841,7 +3205,7 @@ __Val1$ = 12						; size = 4
 	mov	esp, ebp
 	pop	ebp
 	ret	8
-??$?0ABV?$allocator@H@std@@$$V@?$_Compressed_pair@V?$allocator@H@std@@V?$_Vector_val@U?$_Simple_types@H@std@@@2@$00@std@@QAE@U_One_then_variadic_args_t@1@ABV?$allocator@H@1@@Z ENDP ; std::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1>::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1><std::allocator<int> const &>
+??$?0V?$allocator@H@std@@$$V@?$_Compressed_pair@V?$allocator@H@std@@V?$_Vector_val@U?$_Simple_types@H@std@@@2@$00@std@@QAE@U_One_then_variadic_args_t@1@$$QAV?$allocator@H@1@@Z ENDP ; std::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1>::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1><std::allocator<int> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAAV?$allocator@U_Container_proxy@std@@@0@QAU_Container_proxy@0@@Z
@@ -3749,13 +4113,17 @@ text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT _main
 _TEXT	SEGMENT
-tv162 = -392						; size = 4
-$T2 = -384						; size = 20
-$T3 = -356						; size = 28
-$T4 = -320						; size = 8
-$T5 = -301						; size = 1
-$T6 = -292						; size = 8
-$T7 = -273						; size = 1
+tv198 = -417						; size = 1
+tv187 = -416						; size = 4
+tv81 = -416						; size = 4
+$T2 = -408						; size = 20
+$T3 = -380						; size = 28
+$T4 = -344						; size = 4
+$T5 = -332						; size = 4
+$T6 = -320						; size = 8
+$T7 = -301						; size = 1
+$T8 = -292						; size = 8
+$T9 = -273						; size = 1
 _resault$ = -69						; size = 1
 _lvalue$ = -60						; size = 16
 _rvalue$ = -36						; size = 16
@@ -3770,12 +4138,12 @@ _main	PROC						; COMDAT
 	push	__ehhandler$_main
 	mov	eax, DWORD PTR fs:0
 	push	eax
-	sub	esp, 380				; 0000017cH
+	sub	esp, 408				; 00000198H
 	push	ebx
 	push	esi
 	push	edi
-	lea	edi, DWORD PTR [ebp-392]
-	mov	ecx, 95					; 0000005fH
+	lea	edi, DWORD PTR [ebp-420]
+	mov	ecx, 102				; 00000066H
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	eax, DWORD PTR ___security_cookie
@@ -3795,14 +4163,14 @@ _main	PROC						; COMDAT
 	mov	DWORD PTR $T2[ebp+8], 3
 	mov	DWORD PTR $T2[ebp+12], 4
 	mov	DWORD PTR $T2[ebp+16], 5
-	lea	ecx, DWORD PTR $T7[ebp]
+	lea	ecx, DWORD PTR $T9[ebp]
 	call	??0?$allocator@H@std@@QAE@XZ		; std::allocator<int>::allocator<int>
 	push	eax
 	lea	eax, DWORD PTR $T2[ebp+20]
 	push	eax
 	lea	ecx, DWORD PTR $T2[ebp]
 	push	ecx
-	lea	ecx, DWORD PTR $T6[ebp]
+	lea	ecx, DWORD PTR $T8[ebp]
 	call	??0?$initializer_list@H@std@@QAE@PBH0@Z	; std::initializer_list<int>::initializer_list<int>
 	mov	edx, DWORD PTR [eax+4]
 	push	edx
@@ -3822,14 +4190,14 @@ _main	PROC						; COMDAT
 	mov	DWORD PTR $T3[ebp+16], 5
 	mov	DWORD PTR $T3[ebp+20], 6
 	mov	DWORD PTR $T3[ebp+24], 7
-	lea	ecx, DWORD PTR $T5[ebp]
+	lea	ecx, DWORD PTR $T7[ebp]
 	call	??0?$allocator@H@std@@QAE@XZ		; std::allocator<int>::allocator<int>
 	push	eax
 	lea	eax, DWORD PTR $T3[ebp+28]
 	push	eax
 	lea	ecx, DWORD PTR $T3[ebp]
 	push	ecx
-	lea	ecx, DWORD PTR $T4[ebp]
+	lea	ecx, DWORD PTR $T6[ebp]
 	call	??0?$initializer_list@H@std@@QAE@PBH0@Z	; std::initializer_list<int>::initializer_list<int>
 	mov	edx, DWORD PTR [eax+4]
 	push	edx
@@ -3839,25 +4207,38 @@ _main	PROC						; COMDAT
 	call	??0?$vector@HV?$allocator@H@std@@@std@@QAE@V?$initializer_list@H@1@ABV?$allocator@H@1@@Z ; std::vector<int,std::allocator<int> >::vector<int,std::allocator<int> >
 	mov	BYTE PTR __$EHRec$[ebp+8], 1
 ; Line 25
+	sub	esp, 16					; 00000010H
+	mov	ecx, esp
+	mov	DWORD PTR $T5[ebp], esp
 	lea	eax, DWORD PTR _rvalue$[ebp]
 	push	eax
-	lea	ecx, DWORD PTR _lvalue$[ebp]
-	push	ecx
-	call	?is_prefix@@YA_NABV?$vector@HV?$allocator@H@std@@@std@@0@Z ; is_prefix
-	add	esp, 8
+	call	??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z ; std::vector<int,std::allocator<int> >::vector<int,std::allocator<int> >
+	mov	DWORD PTR tv81[ebp], eax
+	mov	BYTE PTR __$EHRec$[ebp+8], 2
+	sub	esp, 16					; 00000010H
+	mov	ecx, esp
+	mov	DWORD PTR $T4[ebp], esp
+	lea	edx, DWORD PTR _lvalue$[ebp]
+	push	edx
+	call	??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z ; std::vector<int,std::allocator<int> >::vector<int,std::allocator<int> >
+	mov	BYTE PTR __$EHRec$[ebp+8], 1
+	call	?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z ; is_prefix
+	add	esp, 32					; 00000020H
+	mov	BYTE PTR tv198[ebp], al
+	mov	al, BYTE PTR tv198[ebp]
 	mov	BYTE PTR _resault$[ebp], al
 ; Line 29
 	movzx	eax, BYTE PTR _resault$[ebp]
 	test	eax, eax
 	je	SHORT $LN3@main
-	mov	DWORD PTR tv162[ebp], OFFSET ??_C@_04LOAJBDKD@true@
+	mov	DWORD PTR tv187[ebp], OFFSET ??_C@_04LOAJBDKD@true@
 	jmp	SHORT $LN4@main
 $LN3@main:
-	mov	DWORD PTR tv162[ebp], OFFSET ??_C@_05GCLNDCPO@fault@
+	mov	DWORD PTR tv187[ebp], OFFSET ??_C@_05GCLNDCPO@fault@
 $LN4@main:
 	mov	esi, esp
 	push	OFFSET ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
-	mov	ecx, DWORD PTR tv162[ebp]
+	mov	ecx, DWORD PTR tv187[ebp]
 	push	ecx
 	mov	edx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	push	edx
@@ -3884,7 +4265,7 @@ $LN4@main:
 	push	edx
 	mov	ecx, ebp
 	push	eax
-	lea	edx, DWORD PTR $LN11@main
+	lea	edx, DWORD PTR $LN13@main
 	call	@_RTC_CheckStackVars@8
 	pop	eax
 	pop	edx
@@ -3897,24 +4278,23 @@ $LN4@main:
 	mov	ecx, DWORD PTR __$ArrayPad$[ebp]
 	xor	ecx, ebp
 	call	@__security_check_cookie@4
-	add	esp, 392				; 00000188H
+	add	esp, 420				; 000001a4H
 	cmp	ebp, esp
 	call	__RTC_CheckEsp
 	mov	esp, ebp
 	pop	ebp
 	ret	0
-	npad	2
-$LN11@main:
+$LN13@main:
 	DD	2
-	DD	$LN10@main
-$LN10@main:
+	DD	$LN12@main
+$LN12@main:
 	DD	-36					; ffffffdcH
 	DD	16					; 00000010H
-	DD	$LN7@main
+	DD	$LN9@main
 	DD	-60					; ffffffc4H
 	DD	16					; 00000010H
-	DD	$LN8@main
-$LN8@main:
+	DD	$LN10@main
+$LN10@main:
 	DB	108					; 0000006cH
 	DB	118					; 00000076H
 	DB	97					; 00000061H
@@ -3922,7 +4302,7 @@ $LN8@main:
 	DB	117					; 00000075H
 	DB	101					; 00000065H
 	DB	0
-$LN7@main:
+$LN9@main:
 	DB	114					; 00000072H
 	DB	118					; 00000076H
 	DB	97					; 00000061H
@@ -3939,10 +4319,13 @@ __unwindfunclet$_main$0:
 __unwindfunclet$_main$1:
 	lea	ecx, DWORD PTR _lvalue$[ebp]
 	jmp	??1?$vector@HV?$allocator@H@std@@@std@@QAE@XZ ; std::vector<int,std::allocator<int> >::~vector<int,std::allocator<int> >
+__unwindfunclet$_main$2:
+	mov	ecx, DWORD PTR $T5[ebp]
+	jmp	??1?$vector@HV?$allocator@H@std@@@std@@QAE@XZ ; std::vector<int,std::allocator<int> >::~vector<int,std::allocator<int> >
 __ehhandler$_main:
 	mov	edx, DWORD PTR [esp+8]
 	lea	eax, DWORD PTR [edx+12]
-	mov	ecx, DWORD PTR [edx-396]
+	mov	ecx, DWORD PTR [edx-424]
 	xor	ecx, eax
 	call	@__security_check_cookie@4
 	mov	ecx, DWORD PTR [edx-4]
@@ -4979,12 +5362,222 @@ __ehhandler$??1?$vector@HV?$allocator@H@std@@@std@@QAE@XZ:
 text$x	ENDS
 ??1?$vector@HV?$allocator@H@std@@@std@@QAE@XZ ENDP	; std::vector<int,std::allocator<int> >::~vector<int,std::allocator<int> >
 ; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT
+$T2 = -337						; size = 1
+$T3 = -325						; size = 1
+__Guard$4 = -124					; size = 4
+__Proxy$ = -112						; size = 8
+__Rightlast$ = -96					; size = 4
+__Rightfirst$ = -84					; size = 4
+__Right_data$ = -72					; size = 4
+__My_data$ = -60					; size = 4
+_$S2$ = -45						; size = 1
+__Alproxy$ = -36					; size = 4
+_this$ = -24						; size = 4
+__$ArrayPad$ = -16					; size = 4
+__$EHRec$ = -12						; size = 12
+__Right$ = 8						; size = 4
+??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z PROC ; std::vector<int,std::allocator<int> >::vector<int,std::allocator<int> >, COMDAT
+; _this$ = ecx
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\vector
+; Line 468
+	push	ebp
+	mov	ebp, esp
+	push	-1
+	push	__ehhandler$??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z
+	mov	eax, DWORD PTR fs:0
+	push	eax
+	sub	esp, 332				; 0000014cH
+	push	ebx
+	push	esi
+	push	edi
+	push	ecx
+	lea	edi, DWORD PTR [ebp-344]
+	mov	ecx, 83					; 00000053H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	pop	ecx
+	mov	eax, DWORD PTR ___security_cookie
+	xor	eax, ebp
+	mov	DWORD PTR __$ArrayPad$[ebp], eax
+	push	eax
+	lea	eax, DWORD PTR __$EHRec$[ebp]
+	mov	DWORD PTR fs:0, eax
+	mov	DWORD PTR _this$[ebp], ecx
+	mov	ecx, OFFSET __C9967FC1_vector
+	call	@__CheckForDebuggerJustMyCode@4
+; Line 467
+	mov	ecx, DWORD PTR __Right$[ebp]
+	call	?_Getal@?$vector@HV?$allocator@H@std@@@std@@ABEABV?$allocator@H@2@XZ ; std::vector<int,std::allocator<int> >::_Getal
+	push	eax
+	lea	eax, DWORD PTR $T3[ebp]
+	push	eax
+	call	?select_on_container_copy_construction@?$_Default_allocator_traits@V?$allocator@H@std@@@std@@SA?AV?$allocator@H@2@ABV32@@Z ; std::_Default_allocator_traits<std::allocator<int> >::select_on_container_copy_construction
+	add	esp, 8
+	push	eax
+	movzx	ecx, BYTE PTR $T2[ebp]
+	push	ecx
+	mov	ecx, DWORD PTR _this$[ebp]
+	call	??$?0V?$allocator@H@std@@$$V@?$_Compressed_pair@V?$allocator@H@std@@V?$_Vector_val@U?$_Simple_types@H@std@@@2@$00@std@@QAE@U_One_then_variadic_args_t@1@$$QAV?$allocator@H@1@@Z ; std::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1>::_Compressed_pair<std::allocator<int>,std::_Vector_val<std::_Simple_types<int> >,1><std::allocator<int> >
+; Line 469
+	mov	ecx, DWORD PTR _this$[ebp]
+	call	?_Getal@?$vector@HV?$allocator@H@std@@@std@@AAEAAV?$allocator@H@2@XZ ; std::vector<int,std::allocator<int> >::_Getal
+	push	eax
+	lea	ecx, DWORD PTR _$S2$[ebp]
+	call	??$?0H@?$allocator@U_Container_proxy@std@@@std@@QAE@ABV?$allocator@H@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><int>
+	lea	eax, DWORD PTR _$S2$[ebp]
+	mov	DWORD PTR __Alproxy$[ebp], eax
+; Line 470
+	mov	eax, DWORD PTR _this$[ebp]
+	mov	DWORD PTR __My_data$[ebp], eax
+; Line 471
+	mov	eax, DWORD PTR __Right$[ebp]
+	mov	DWORD PTR __Right_data$[ebp], eax
+; Line 472
+	mov	eax, DWORD PTR __Right_data$[ebp]
+	mov	ecx, DWORD PTR [eax+4]
+	mov	DWORD PTR __Rightfirst$[ebp], ecx
+; Line 473
+	mov	eax, DWORD PTR __Right_data$[ebp]
+	mov	ecx, DWORD PTR [eax+8]
+	mov	DWORD PTR __Rightlast$[ebp], ecx
+; Line 474
+	mov	eax, DWORD PTR __My_data$[ebp]
+	push	eax
+	mov	ecx, DWORD PTR __Alproxy$[ebp]
+	push	ecx
+	lea	ecx, DWORD PTR __Proxy$[ebp]
+	call	??0?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QAE@AAV?$allocator@U_Container_proxy@std@@@1@AAU_Container_base12@1@@Z ; std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >
+	mov	DWORD PTR __$EHRec$[ebp+8], 0
+; Line 475
+	mov	eax, DWORD PTR __Rightfirst$[ebp]
+	cmp	eax, DWORD PTR __Rightlast$[ebp]
+	je	SHORT $LN2@vector
+; Line 476
+	mov	eax, DWORD PTR __Rightlast$[ebp]
+	sub	eax, DWORD PTR __Rightfirst$[ebp]
+	sar	eax, 2
+	push	eax
+	mov	ecx, DWORD PTR _this$[ebp]
+	call	?_Buy_raw@?$vector@HV?$allocator@H@std@@@std@@AAEXI@Z ; std::vector<int,std::allocator<int> >::_Buy_raw
+; Line 477
+	mov	eax, DWORD PTR _this$[ebp]
+	mov	DWORD PTR __Guard$4[ebp], eax
+	mov	BYTE PTR __$EHRec$[ebp+8], 1
+; Line 478
+	mov	eax, DWORD PTR __My_data$[ebp]
+	mov	ecx, DWORD PTR [eax+4]
+	push	ecx
+	mov	edx, DWORD PTR __Rightlast$[ebp]
+	push	edx
+	mov	eax, DWORD PTR __Rightfirst$[ebp]
+	push	eax
+	mov	ecx, DWORD PTR _this$[ebp]
+	call	??$_Ucopy@PAH@?$vector@HV?$allocator@H@std@@@std@@AAEPAHPAH00@Z ; std::vector<int,std::allocator<int> >::_Ucopy<int *>
+	mov	ecx, DWORD PTR __My_data$[ebp]
+	mov	DWORD PTR [ecx+8], eax
+; Line 479
+	mov	DWORD PTR __Guard$4[ebp], 0
+; Line 480
+	mov	BYTE PTR __$EHRec$[ebp+8], 0
+	lea	ecx, DWORD PTR __Guard$4[ebp]
+	call	??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ ; std::_Tidy_guard<std::vector<int,std::allocator<int> > >::~_Tidy_guard<std::vector<int,std::allocator<int> > >
+$LN2@vector:
+; Line 482
+	lea	ecx, DWORD PTR __Proxy$[ebp]
+	call	?_Release@_Basic_container_proxy_ptr12@std@@QAEXXZ ; std::_Basic_container_proxy_ptr12::_Release
+; Line 483
+	mov	DWORD PTR __$EHRec$[ebp+8], -1
+	lea	ecx, DWORD PTR __Proxy$[ebp]
+	call	??1?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QAE@XZ ; std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::~_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >
+	mov	eax, DWORD PTR _this$[ebp]
+	push	edx
+	mov	ecx, ebp
+	push	eax
+	lea	edx, DWORD PTR $LN11@vector
+	call	@_RTC_CheckStackVars@8
+	pop	eax
+	pop	edx
+	mov	ecx, DWORD PTR __$EHRec$[ebp]
+	mov	DWORD PTR fs:0, ecx
+	pop	ecx
+	pop	edi
+	pop	esi
+	pop	ebx
+	mov	ecx, DWORD PTR __$ArrayPad$[ebp]
+	xor	ecx, ebp
+	call	@__security_check_cookie@4
+	add	esp, 344				; 00000158H
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	4
+	npad	2
+$LN11@vector:
+	DD	3
+	DD	$LN10@vector
+$LN10@vector:
+	DD	-45					; ffffffd3H
+	DD	1
+	DD	$LN6@vector
+	DD	-112					; ffffff90H
+	DD	8
+	DD	$LN7@vector
+	DD	-124					; ffffff84H
+	DD	4
+	DD	$LN8@vector
+$LN8@vector:
+	DB	95					; 0000005fH
+	DB	71					; 00000047H
+	DB	117					; 00000075H
+	DB	97					; 00000061H
+	DB	114					; 00000072H
+	DB	100					; 00000064H
+	DB	0
+$LN7@vector:
+	DB	95					; 0000005fH
+	DB	80					; 00000050H
+	DB	114					; 00000072H
+	DB	111					; 0000006fH
+	DB	120					; 00000078H
+	DB	121					; 00000079H
+	DB	0
+$LN6@vector:
+	DB	36					; 00000024H
+	DB	83					; 00000053H
+	DB	50					; 00000032H
+	DB	0
+_TEXT	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+__unwindfunclet$??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z$0:
+	lea	ecx, DWORD PTR __Proxy$[ebp]
+	jmp	??1?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QAE@XZ ; std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::~_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >
+__unwindfunclet$??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z$1:
+	lea	ecx, DWORD PTR __Guard$4[ebp]
+	jmp	??1?$_Tidy_guard@V?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@XZ ; std::_Tidy_guard<std::vector<int,std::allocator<int> > >::~_Tidy_guard<std::vector<int,std::allocator<int> > >
+__ehhandler$??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z:
+	mov	edx, DWORD PTR [esp+8]
+	lea	eax, DWORD PTR [edx+12]
+	mov	ecx, DWORD PTR [edx-348]
+	xor	ecx, eax
+	call	@__security_check_cookie@4
+	mov	ecx, DWORD PTR [edx-4]
+	xor	ecx, eax
+	call	@__security_check_cookie@4
+	mov	eax, OFFSET __ehfuncinfo$??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z
+	jmp	___CxxFrameHandler3
+text$x	ENDS
+??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z ENDP ; std::vector<int,std::allocator<int> >::vector<int,std::allocator<int> >
+; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ??0?$vector@HV?$allocator@H@std@@@std@@QAE@V?$initializer_list@H@1@ABV?$allocator@H@1@@Z
 _TEXT	SEGMENT
 $T2 = -289						; size = 1
 $T3 = -265						; size = 1
 __Proxy$ = -64						; size = 8
-_$S2$ = -45						; size = 1
+_$S3$ = -45						; size = 1
 __Alproxy$ = -36					; size = 4
 _this$ = -24						; size = 4
 __$ArrayPad$ = -16					; size = 4
@@ -5031,9 +5624,9 @@ __Al$ = 16						; size = 4
 	mov	ecx, DWORD PTR _this$[ebp]
 	call	?_Getal@?$vector@HV?$allocator@H@std@@@std@@AAEAAV?$allocator@H@2@XZ ; std::vector<int,std::allocator<int> >::_Getal
 	push	eax
-	lea	ecx, DWORD PTR _$S2$[ebp]
+	lea	ecx, DWORD PTR _$S3$[ebp]
 	call	??$?0H@?$allocator@U_Container_proxy@std@@@std@@QAE@ABV?$allocator@H@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><int>
-	lea	eax, DWORD PTR _$S2$[ebp]
+	lea	eax, DWORD PTR _$S3$[ebp]
 	mov	DWORD PTR __Alproxy$[ebp], eax
 ; Line 461
 	mov	eax, DWORD PTR _this$[ebp]
@@ -5106,7 +5699,7 @@ $LN5@vector:
 $LN4@vector:
 	DB	36					; 00000024H
 	DB	83					; 00000053H
-	DB	50					; 00000032H
+	DB	51					; 00000033H
 	DB	0
 _TEXT	ENDS
 ;	COMDAT text$x
@@ -5127,6 +5720,40 @@ __ehhandler$??0?$vector@HV?$allocator@H@std@@@std@@QAE@V?$initializer_list@H@1@A
 	jmp	___CxxFrameHandler3
 text$x	ENDS
 ??0?$vector@HV?$allocator@H@std@@@std@@QAE@V?$initializer_list@H@1@ABV?$allocator@H@1@@Z ENDP ; std::vector<int,std::allocator<int> >::vector<int,std::allocator<int> >
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ?select_on_container_copy_construction@?$_Default_allocator_traits@V?$allocator@H@std@@@std@@SA?AV?$allocator@H@2@ABV32@@Z
+_TEXT	SEGMENT
+___$ReturnUdt$ = 8					; size = 4
+__Al$ = 12						; size = 4
+?select_on_container_copy_construction@?$_Default_allocator_traits@V?$allocator@H@std@@@std@@SA?AV?$allocator@H@2@ABV32@@Z PROC ; std::_Default_allocator_traits<std::allocator<int> >::select_on_container_copy_construction, COMDAT
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xmemory
+; Line 770
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 192				; 000000c0H
+	push	ebx
+	push	esi
+	push	edi
+	lea	edi, DWORD PTR [ebp-192]
+	mov	ecx, 48					; 00000030H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	ecx, OFFSET __DB4EB944_xmemory
+	call	@__CheckForDebuggerJustMyCode@4
+; Line 771
+	mov	eax, DWORD PTR ___$ReturnUdt$[ebp]
+; Line 772
+	pop	edi
+	pop	esi
+	pop	ebx
+	add	esp, 192				; 000000c0H
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+?select_on_container_copy_construction@?$_Default_allocator_traits@V?$allocator@H@std@@@std@@SA?AV?$allocator@H@2@ABV32@@Z ENDP ; std::_Default_allocator_traits<std::allocator<int> >::select_on_container_copy_construction
+_TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ?max_size@?$_Default_allocator_traits@V?$allocator@H@std@@@std@@SAIABV?$allocator@H@2@@Z
 _TEXT	SEGMENT
@@ -5333,87 +5960,162 @@ __ehhandler$??0?$allocator@H@std@@QAE@XZ:
 text$x	ENDS
 ??0?$allocator@H@std@@QAE@XZ ENDP			; std::allocator<int>::allocator<int>
 ; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT ?is_prefix@@YA_NABV?$vector@HV?$allocator@H@std@@@std@@0@Z
+;	COMDAT ?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z
 _TEXT	SEGMENT
-_init$1 = -8						; size = 4
-_lvalue$ = 8						; size = 4
-_rvalue$ = 12						; size = 4
-?is_prefix@@YA_NABV?$vector@HV?$allocator@H@std@@@std@@0@Z PROC ; is_prefix, COMDAT
+tv147 = -269						; size = 1
+tv155 = -268						; size = 4
+$T2 = -257						; size = 1
+$T3 = -248						; size = 4
+$T4 = -236						; size = 4
+$T5 = -221						; size = 1
+_init$6 = -20						; size = 4
+__$EHRec$ = -12						; size = 12
+_lvalue$ = 8						; size = 16
+_rvalue$ = 24						; size = 16
+?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z PROC ; is_prefix, COMDAT
 ; File C:\Users\R2\Desktop\yoda\learning_myself\c_c++\Visual_c++\c++_Primer_book\src\Main40.cpp
 ; Line 5
 	push	ebp
 	mov	ebp, esp
-	sub	esp, 204				; 000000ccH
+	push	-1
+	push	__ehhandler$?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z
+	mov	eax, DWORD PTR fs:0
+	push	eax
+	sub	esp, 260				; 00000104H
 	push	ebx
 	push	esi
 	push	edi
-	lea	edi, DWORD PTR [ebp-204]
-	mov	ecx, 51					; 00000033H
+	lea	edi, DWORD PTR [ebp-272]
+	mov	ecx, 65					; 00000041H
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
+	mov	eax, DWORD PTR ___security_cookie
+	xor	eax, ebp
+	push	eax
+	lea	eax, DWORD PTR __$EHRec$[ebp]
+	mov	DWORD PTR fs:0, eax
+	mov	DWORD PTR __$EHRec$[ebp+8], 1
 	mov	ecx, OFFSET __23AD6E74_Main40@cpp
 	call	@__CheckForDebuggerJustMyCode@4
 ; Line 6
-	mov	ecx, DWORD PTR _lvalue$[ebp]
+	lea	ecx, DWORD PTR _lvalue$[ebp]
 	call	?size@?$vector@HV?$allocator@H@std@@@std@@QBEIXZ ; std::vector<int,std::allocator<int> >::size
 	mov	esi, eax
-	mov	ecx, DWORD PTR _rvalue$[ebp]
+	lea	ecx, DWORD PTR _rvalue$[ebp]
 	call	?size@?$vector@HV?$allocator@H@std@@@std@@QBEIXZ ; std::vector<int,std::allocator<int> >::size
 	cmp	esi, eax
 	jbe	SHORT $LN5@is_prefix
 ; Line 8
-	mov	eax, DWORD PTR _lvalue$[ebp]
+	sub	esp, 16					; 00000010H
+	mov	ecx, esp
+	mov	DWORD PTR $T4[ebp], esp
+	lea	eax, DWORD PTR _lvalue$[ebp]
 	push	eax
-	mov	ecx, DWORD PTR _rvalue$[ebp]
-	push	ecx
-	call	?is_prefix@@YA_NABV?$vector@HV?$allocator@H@std@@@std@@0@Z ; is_prefix
-	add	esp, 8
-	jmp	SHORT $LN1@is_prefix
+	call	??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z ; std::vector<int,std::allocator<int> >::vector<int,std::allocator<int> >
+	mov	DWORD PTR tv155[ebp], eax
+	mov	BYTE PTR __$EHRec$[ebp+8], 2
+	sub	esp, 16					; 00000010H
+	mov	ecx, esp
+	mov	DWORD PTR $T3[ebp], esp
+	lea	edx, DWORD PTR _rvalue$[ebp]
+	push	edx
+	call	??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z ; std::vector<int,std::allocator<int> >::vector<int,std::allocator<int> >
+	mov	BYTE PTR __$EHRec$[ebp+8], 1
+	call	?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z ; is_prefix
+	add	esp, 32					; 00000020H
+	mov	BYTE PTR tv147[ebp], al
+	mov	al, BYTE PTR tv147[ebp]
+	mov	BYTE PTR $T5[ebp], al
+	mov	BYTE PTR __$EHRec$[ebp+8], 0
+	lea	ecx, DWORD PTR _lvalue$[ebp]
+	call	??1?$vector@HV?$allocator@H@std@@@std@@QAE@XZ ; std::vector<int,std::allocator<int> >::~vector<int,std::allocator<int> >
+	mov	DWORD PTR __$EHRec$[ebp+8], -1
+	lea	ecx, DWORD PTR _rvalue$[ebp]
+	call	??1?$vector@HV?$allocator@H@std@@@std@@QAE@XZ ; std::vector<int,std::allocator<int> >::~vector<int,std::allocator<int> >
+	mov	al, BYTE PTR $T5[ebp]
+	jmp	$LN1@is_prefix
 $LN5@is_prefix:
 ; Line 11
-	mov	DWORD PTR _init$1[ebp], 0
+	mov	DWORD PTR _init$6[ebp], 0
 	jmp	SHORT $LN4@is_prefix
 $LN2@is_prefix:
-	mov	eax, DWORD PTR _init$1[ebp]
+	mov	eax, DWORD PTR _init$6[ebp]
 	add	eax, 1
-	mov	DWORD PTR _init$1[ebp], eax
+	mov	DWORD PTR _init$6[ebp], eax
 $LN4@is_prefix:
-	mov	ecx, DWORD PTR _lvalue$[ebp]
+	lea	ecx, DWORD PTR _lvalue$[ebp]
 	call	?size@?$vector@HV?$allocator@H@std@@@std@@QBEIXZ ; std::vector<int,std::allocator<int> >::size
-	cmp	DWORD PTR _init$1[ebp], eax
-	je	SHORT $LN1@is_prefix
+	cmp	DWORD PTR _init$6[ebp], eax
+	je	SHORT $LN3@is_prefix
 ; Line 13
-	mov	eax, DWORD PTR _init$1[ebp]
+	mov	eax, DWORD PTR _init$6[ebp]
 	push	eax
-	mov	ecx, DWORD PTR _lvalue$[ebp]
+	lea	ecx, DWORD PTR _lvalue$[ebp]
 	call	??A?$vector@HV?$allocator@H@std@@@std@@QBEABHI@Z ; std::vector<int,std::allocator<int> >::operator[]
 	mov	esi, eax
-	mov	ecx, DWORD PTR _init$1[ebp]
+	mov	ecx, DWORD PTR _init$6[ebp]
 	push	ecx
-	mov	ecx, DWORD PTR _rvalue$[ebp]
+	lea	ecx, DWORD PTR _rvalue$[ebp]
 	call	??A?$vector@HV?$allocator@H@std@@@std@@QBEABHI@Z ; std::vector<int,std::allocator<int> >::operator[]
 	mov	edx, DWORD PTR [esi]
 	cmp	edx, DWORD PTR [eax]
 	je	SHORT $LN6@is_prefix
 ; Line 14
-	xor	al, al
+	mov	BYTE PTR $T2[ebp], 0
+	mov	BYTE PTR __$EHRec$[ebp+8], 0
+	lea	ecx, DWORD PTR _lvalue$[ebp]
+	call	??1?$vector@HV?$allocator@H@std@@@std@@QAE@XZ ; std::vector<int,std::allocator<int> >::~vector<int,std::allocator<int> >
+	mov	DWORD PTR __$EHRec$[ebp+8], -1
+	lea	ecx, DWORD PTR _rvalue$[ebp]
+	call	??1?$vector@HV?$allocator@H@std@@@std@@QAE@XZ ; std::vector<int,std::allocator<int> >::~vector<int,std::allocator<int> >
+	mov	al, BYTE PTR $T2[ebp]
 	jmp	SHORT $LN1@is_prefix
 $LN6@is_prefix:
 ; Line 16
 	jmp	SHORT $LN2@is_prefix
-$LN1@is_prefix:
+$LN3@is_prefix:
 ; Line 17
+	mov	BYTE PTR __$EHRec$[ebp+8], 0
+	lea	ecx, DWORD PTR _lvalue$[ebp]
+	call	??1?$vector@HV?$allocator@H@std@@@std@@QAE@XZ ; std::vector<int,std::allocator<int> >::~vector<int,std::allocator<int> >
+	mov	DWORD PTR __$EHRec$[ebp+8], -1
+	lea	ecx, DWORD PTR _rvalue$[ebp]
+	call	??1?$vector@HV?$allocator@H@std@@@std@@QAE@XZ ; std::vector<int,std::allocator<int> >::~vector<int,std::allocator<int> >
+$LN1@is_prefix:
+	mov	ecx, DWORD PTR __$EHRec$[ebp]
+	mov	DWORD PTR fs:0, ecx
+	pop	ecx
 	pop	edi
 	pop	esi
 	pop	ebx
-	add	esp, 204				; 000000ccH
+	add	esp, 272				; 00000110H
 	cmp	ebp, esp
 	call	__RTC_CheckEsp
 	mov	esp, ebp
 	pop	ebp
 	ret	0
-?is_prefix@@YA_NABV?$vector@HV?$allocator@H@std@@@std@@0@Z ENDP ; is_prefix
 _TEXT	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+__unwindfunclet$?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z$0:
+	lea	ecx, DWORD PTR _rvalue$[ebp]
+	jmp	??1?$vector@HV?$allocator@H@std@@@std@@QAE@XZ ; std::vector<int,std::allocator<int> >::~vector<int,std::allocator<int> >
+__unwindfunclet$?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z$1:
+	lea	ecx, DWORD PTR _lvalue$[ebp]
+	jmp	??1?$vector@HV?$allocator@H@std@@@std@@QAE@XZ ; std::vector<int,std::allocator<int> >::~vector<int,std::allocator<int> >
+__unwindfunclet$?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z$2:
+	mov	ecx, DWORD PTR $T4[ebp]
+	jmp	??1?$vector@HV?$allocator@H@std@@@std@@QAE@XZ ; std::vector<int,std::allocator<int> >::~vector<int,std::allocator<int> >
+__ehhandler$?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z:
+	mov	edx, DWORD PTR [esp+8]
+	lea	eax, DWORD PTR [edx+12]
+	mov	ecx, DWORD PTR [edx-276]
+	xor	ecx, eax
+	call	@__security_check_cookie@4
+	mov	eax, OFFSET __ehfuncinfo$?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z
+	jmp	___CxxFrameHandler3
+text$x	ENDS
+?is_prefix@@YA_NV?$vector@HV?$allocator@H@std@@@std@@0@Z ENDP ; is_prefix
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ??$_Min_value@I@std@@YAABIABI0@Z
 _TEXT	SEGMENT
