@@ -1,3 +1,3 @@
-﻿  Main39.cpp
-C:\Users\R2\Desktop\yoda\learning_myself\c_c++\Visual_c++\c++_Primer_book\src\Main39.cpp(20,13): warning C4018: '>': signed/unsigned mismatch
+﻿  Main40.cpp
+C:\Users\R2\Desktop\yoda\learning_myself\c_c++\Visual_c++\c++_Primer_book\src\Main40.cpp(17): warning C4715: 'is_prefix': not all control paths return a value
   c++_Primer_book.vcxproj -> C:\Users\R2\Desktop\yoda\learning_myself\c_c++\Visual_c++\c++_Primer_book\\bin\Win32\Debug\c++_Primer_book.exe
