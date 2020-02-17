@@ -1,3 +1,9 @@
+
+.gitignore
+.vs/c++_Primer_book/v16/.suo
+.vs/c++_Primer_book/v16/Browse.VC.db
+ bin/Win32/Debug/c++_Primer_book.ilk
+
 # Prerequisites
 *.d
 
