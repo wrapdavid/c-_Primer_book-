@@ -20,11 +20,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\exercise2_42.h" />
+    <ClInclude Include="src\Header.h" />
     <ClInclude Include="src\Sales_item.h" />
     <ClInclude Include="src\Version_test.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Main45.cpp" />
+    <ClCompile Include="src\Main46.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
