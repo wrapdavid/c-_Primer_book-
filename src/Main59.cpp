@@ -1,5 +1,5 @@
 #include<iostream>
 int main() {
-	std::cin.get();//传筿福程代刚time graphΤΘ
+	std::cin.get();//传筿福程代刚time graphΤΘ.
 
 }
